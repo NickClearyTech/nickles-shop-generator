@@ -8,7 +8,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  test-backend:
+  test:
     # Runs pytest and black formatting tool
     runs-on: nicleary-ubuntu-k8s
     steps:
@@ -20,3 +20,47 @@ jobs:
 
       - name: Run tests
         run: docker run --name pytest shop_gen_test:${{ github.run_number }}
+
+  build:
+    runs-on: nicleary-ubuntu-k8s
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Docker build
+        run: docker build -t shop_gen:${{ github.run_number }} -f Dockerfile .
+
+      - name: Compress image
+        run: docker save shop_gen:${{ github.run_number }} | gzip > shop_gen.tar.gz
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: compressed_image
+          path: shop_gen.tar.gz
+
+  trivy:
+    needs: build
+    runs-on: nicleary-ubuntu-k8s
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - uses: actions/download-artifact@v3
+        name: Download image from artifact
+        with:
+          name: compressed_image
+
+      - name: Load image from artifact
+        run: docker load < shop_gen.tar.gz
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'shop_gen:${{ github.run_number }}'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          ignore-unfixed: true
+      - uses: actions/upload-artifact@v3
+        with:
+          name: trivy_results
+          path: 'trivy-results.sarif'
