@@ -63,8 +63,8 @@ jobs:
         id: import-scan
         uses: ivanamat/defectdojo-import-scan@v1
         with:
-          token: ${{ secrets.DEFECTOJO_TOKEN }}
-          defectdojo_url: ${{ secrets.DEFECTOJO_URL }}
+          token: ${{ secrets.DEFECTDOJO_TOKEN }}
+          defectdojo_url: ${{ secrets.DEFECTDOJO_URL }}
           file: reports/trivy-scan-report.json
           scan_type: Trivy Scan
           engagement: 1
