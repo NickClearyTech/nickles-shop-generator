@@ -1,0 +1,42 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./shop_gen:/shop_gen
+    ports:
+      - 8000:8000
+    command: [ 'bash', '-c', 'gunicorn --bind :8000 --workers 4 --reload wsgi:application' ]
+    depends_on:
+      - postgres
+      - initializer
+  initializer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./shop_gen:/shop_gen
+    command: [ 'bash', '-c', 'python3 manage.py migrate' ]
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:15-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_SERVER=database
+      - POSTGRES_PORT=5432
+      - POSTGRES_DB=shopgen
+    ports:
+      - 5432:5432
+
+volumes:
+  postgres_data:
