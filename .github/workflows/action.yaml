@@ -7,6 +7,8 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ "main" ]
 
+description: "lmao"
+runs:
 jobs:
   test:
     # Runs pytest and black formatting tool
@@ -57,10 +59,15 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: 'shop_gen:${{ github.run_number }}'
-          format: 'sarif'
-          output: 'trivy-results.sarif'
+          format: 'json'
+          output: 'trivy-results.json'
           ignore-unfixed: true
-      - uses: actions/upload-artifact@v3
+      - name: Publish report
+        id: import-scan
+        uses: ivanamat/defectdojo-import-scan@v1
         with:
-          name: trivy_results
-          path: 'trivy-results.sarif'
+          token: ${{ secrets.DEFECTOJO_TOKEN }}
+          defectdojo_url: ${{ secrets.DEFECTOJO_URL }}
+          file: reports/trivy-scan-report.json
+          scan_type: Trivy Scan
+          engagement: 1
