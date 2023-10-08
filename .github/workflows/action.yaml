@@ -65,6 +65,6 @@ jobs:
         with:
           token: ${{ secrets.DEFECTDOJO_TOKEN }}
           defectdojo_url: ${{ secrets.DEFECTDOJO_URL }}
-          file: reports/trivy-scan-report.json
+          file: 'trivy-results.json'
           scan_type: Trivy Scan
           engagement: 1
