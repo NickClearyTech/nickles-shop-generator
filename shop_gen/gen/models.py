@@ -1,4 +1,5 @@
 from django.db.models import Model, CharField, IntegerField, ForeignKey, BooleanField, CASCADE
+from django.contrib.auth.models import User
 
 
 class System(Model):
@@ -11,3 +12,5 @@ class Item(Model):
     description: CharField(max_length=4096, null=True)
     system: ForeignKey(System, on_delete=CASCADE, null=False)
     price: IntegerField()
+    public: BooleanField()
+    owner: ForeignKey(User, on_delete=CASCADE, null=False)
