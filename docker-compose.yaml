@@ -22,7 +22,7 @@ services:
       - .env
     volumes:
       - ./shop_gen:/shop_gen
-    command: [ 'bash', '-c', 'python3 manage.py migrate' ]
+    command: [ 'bash', '-c', 'python3 manage.py migrate && python3 manage.py loaddata fixtures.json' ]
     depends_on:
       - postgres
   postgres:
