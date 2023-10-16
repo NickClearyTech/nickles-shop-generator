@@ -26,16 +26,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Docker login
+        users: docker login -u ${{ secrets.HARBOR_USERNAME }} -p ${{ secrets.HARBOR_PASSWORD }} https://harbor.nicleary.com
+
       - name: Docker build
-        run: docker build -t shop_gen:${{ github.run_number }} -f Dockerfile .
+        run: docker build -t harbor.nicleary.com/library/shop_gen:${{ github.run_number }} -f Dockerfile .
 
-      - name: Compress image
-        run: docker save shop_gen:${{ github.run_number }} | gzip > shop_gen.tar.gz
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: compressed_image
-          path: shop_gen.tar.gz
+      - name: Docker push
+        run: docker push harbor.nicleary.com/library/shop_gen:${{ github.run_number }}
 
   trivy:
     needs: build
@@ -44,18 +42,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - uses: actions/download-artifact@v3
-        name: Download image from artifact
-        with:
-          name: compressed_image
-
-      - name: Load image from artifact
-        run: docker load < shop_gen.tar.gz
-
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'shop_gen:${{ github.run_number }}'
+          image-ref: 'harbor.nicleary.com/library/shop_gen:${{ github.run_number }}'
           format: 'json'
           output: 'trivy-results.json'
           ignore-unfixed: true
