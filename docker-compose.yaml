@@ -9,7 +9,7 @@ services:
     volumes:
       - ./shop_gen:/shop_gen
     ports:
-      - 8000:8000
+      - 8080:8000
     command: [ 'bash', '-c', 'gunicorn --bind :8000 --workers 4 --reload wsgi:application' ]
     depends_on:
       - postgres

@@ -6,7 +6,6 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -15,46 +14,107 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='System',
+            name="System",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('abbreviation', models.CharField(default='NA', max_length=8)),
-                ('full_name', models.CharField(default='NA', max_length=64)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("abbreviation", models.CharField(default="NA", max_length=8)),
+                ("full_name", models.CharField(default="NA", max_length=64)),
             ],
         ),
         migrations.CreateModel(
-            name='Spell',
+            name="Spell",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=128)),
-                ('description', models.CharField(max_length=4096, null=True)),
-                ('price', models.IntegerField(default=0)),
-                ('public', models.BooleanField(db_index=True)),
-                ('sourcebook', models.CharField(max_length=32, null=True)),
-                ('level', models.IntegerField()),
-                ('owner', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('system', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='gen.system')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=128)),
+                ("description", models.CharField(max_length=4096, null=True)),
+                ("price", models.IntegerField(default=0)),
+                ("public", models.BooleanField(db_index=True)),
+                ("sourcebook", models.CharField(max_length=32, null=True)),
+                ("level", models.IntegerField()),
+                (
+                    "owner",
+                    models.ForeignKey(
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
+                (
+                    "system",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="gen.system"
+                    ),
+                ),
             ],
             options={
-                'abstract': False,
+                "abstract": False,
             },
         ),
         migrations.CreateModel(
-            name='Item',
+            name="Item",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=128)),
-                ('description', models.CharField(max_length=4096, null=True)),
-                ('price', models.IntegerField(default=0)),
-                ('public', models.BooleanField(db_index=True)),
-                ('sourcebook', models.CharField(max_length=32, null=True)),
-                ('magical', models.BooleanField(default=False, null=True)),
-                ('rarity', models.CharField(choices=[('C', 'Common'), ('U', 'Uncommon'), ('R', 'Rare'), ('V', 'Very Rare'), ('L', 'Legendary')], max_length=1, null=True)),
-                ('owner', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('system', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='gen.system')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=128)),
+                ("description", models.CharField(max_length=4096, null=True)),
+                ("price", models.IntegerField(default=0)),
+                ("public", models.BooleanField(db_index=True)),
+                ("sourcebook", models.CharField(max_length=32, null=True)),
+                ("magical", models.BooleanField(default=False, null=True)),
+                (
+                    "rarity",
+                    models.CharField(
+                        choices=[
+                            ("C", "Common"),
+                            ("U", "Uncommon"),
+                            ("R", "Rare"),
+                            ("V", "Very Rare"),
+                            ("L", "Legendary"),
+                        ],
+                        max_length=1,
+                        null=True,
+                    ),
+                ),
+                (
+                    "owner",
+                    models.ForeignKey(
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
+                (
+                    "system",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE, to="gen.system"
+                    ),
+                ),
             ],
             options={
-                'abstract': False,
+                "abstract": False,
             },
         ),
     ]

@@ -25,12 +25,16 @@ for item in data["item"]:
             "pk": current_pk,
             "fields": {
                 "name": item["name"],
-                "description": get_desc_from_entries(item["entries"]) if "entries" in item.keys() else "",
+                "description": get_desc_from_entries(item["entries"])
+                if "entries" in item.keys()
+                else "",
                 "system": 1,
                 "public": True,
                 "price": 0,
-                "rarity": str(item["rarity"][0]).upper() if "rarity" in item.keys() else None
-            }
+                "rarity": str(item["rarity"][0]).upper()
+                if "rarity" in item.keys()
+                else None,
+            },
         }
     )
     current_pk += 1

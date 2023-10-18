@@ -34,7 +34,7 @@ class Item(ItemBase):
         ("U", "Uncommon"),
         ("R", "Rare"),
         ("V", "Very Rare"),
-        ("L", "Legendary")
+        ("L", "Legendary"),
     ]
     magical = models.BooleanField(null=True, default=False)
     rarity = models.CharField(max_length=1, choices=RARITY_CHOICES, null=True)
@@ -42,3 +42,36 @@ class Item(ItemBase):
 
 class Spell(ItemBase):
     level = models.IntegerField(null=False)
+
+
+class ItemToShop(models.Model):
+    item = models.ForeignKey(to=Item, on_delete=models.CASCADE)
+    shop = models.ForeignKey(to="Shop", on_delete=models.CASCADE)
+    quantity = models.IntegerField(null=False, default=1)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(fields=("item", "shop"), name="once_per_shop_item")
+        ]
+
+
+class SpellToShop(models.Model):
+    spell = models.ForeignKey(to=Spell, on_delete=models.CASCADE)
+    shop = models.ForeignKey(to="Shop", on_delete=models.CASCADE)
+    quantity = models.IntegerField(null=False, default=1)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=("spell", "shop"), name="once_per_shop_spell"
+            )
+        ]
+
+
+class Shop(DefaultFields):
+    items = models.ManyToManyField(to=Item, through=ItemToShop)
+    spells = models.ManyToManyField(to=Spell, through=SpellToShop)
+    owner = models.ForeignKey(
+        to=User, on_delete=models.CASCADE, null=True, db_index=True
+    )
+    name = models.CharField(max_length=128, null=False, default="My New Shop")
