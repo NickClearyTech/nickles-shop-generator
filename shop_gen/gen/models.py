@@ -1,4 +1,5 @@
 from django.contrib.auth.models import User
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 
 
@@ -18,11 +19,13 @@ class System(DefaultFields):
 class ItemBase(DefaultFields):
     name = models.CharField(max_length=128, null=False)
     description = models.CharField(max_length=4096, null=True)
-    system = models.ForeignKey(System, on_delete=models.CASCADE, null=False)
-    price = models.IntegerField(default=0)
+    system = models.ForeignKey(
+        System, on_delete=models.CASCADE, null=False, db_index=True
+    )
+    price = models.IntegerField(default=0, validators=[MinValueValidator(0)])
     public = models.BooleanField(db_index=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True, db_index=True)
-    sourcebook = models.CharField(null=True, max_length=32)
+    sourcebook = models.CharField(null=True, max_length=32, db_index=True)
 
     class Meta:
         abstract = True
@@ -41,13 +44,17 @@ class Item(ItemBase):
 
 
 class Spell(ItemBase):
-    level = models.IntegerField(null=False)
+    level = models.IntegerField(
+        null=False, validators=[MinValueValidator(1), MaxValueValidator(9)]
+    )
 
 
 class ItemToShop(models.Model):
     item = models.ForeignKey(to=Item, on_delete=models.CASCADE)
     shop = models.ForeignKey(to="Shop", on_delete=models.CASCADE)
-    quantity = models.IntegerField(null=False, default=1)
+    quantity = models.IntegerField(
+        null=False, default=1, validators=[MinValueValidator(0)]
+    )
 
     class Meta:
         constraints = [
@@ -58,7 +65,9 @@ class ItemToShop(models.Model):
 class SpellToShop(models.Model):
     spell = models.ForeignKey(to=Spell, on_delete=models.CASCADE)
     shop = models.ForeignKey(to="Shop", on_delete=models.CASCADE)
-    quantity = models.IntegerField(null=False, default=1)
+    quantity = models.IntegerField(
+        null=False, default=1, validators=[MinValueValidator(0)]
+    )
 
     class Meta:
         constraints = [
