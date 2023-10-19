@@ -6,7 +6,13 @@ from gen.models import System, Item, Spell
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = "__all__"
+        exclude = ["password", "groups", "user_permissions"]
+
+
+class UserSelfSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ["username", "email"]
 
 
 class SystemSerializer(serializers.ModelSerializer):
