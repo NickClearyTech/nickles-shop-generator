@@ -12,6 +12,7 @@ class UserViewSet(
 ):
     def get_queryset(self):
         if self.action == "get_me":
+            self.request
             return User.objects.get(self.request.user)
         return User.objects.all().order_by("-date_joined")
 

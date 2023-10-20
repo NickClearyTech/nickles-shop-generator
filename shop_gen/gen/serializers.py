@@ -27,9 +27,25 @@ class ItemSerializer(serializers.ModelSerializer):
         fields = "__all__"
         depth = 1
 
+    system = serializers.SlugRelatedField(
+        many=False, read_only=True, slug_field="abbreviation"
+    )
+
+    owner = serializers.SlugRelatedField(
+        many=False, read_only=True, slug_field="username"
+    )
+
 
 class SpellSerializer(serializers.ModelSerializer):
     class Meta:
         model = Spell
         fields = "__all__"
         depth = 1
+
+    system = serializers.SlugRelatedField(
+        many=False, read_only=True, slug_field="abbreviation"
+    )
+
+    owner = serializers.SlugRelatedField(
+        many=False, read_only=True, slug_field="username"
+    )

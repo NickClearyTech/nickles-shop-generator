@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "drf_spectacular",
     "django_extensions",
+    "django_celery_results",
 ]
 
 MIDDLEWARE = [
@@ -148,3 +149,13 @@ SPECTACULAR_SETTINGS = {
 DEFAULT_ADMIN_EMAIL = os.environ.get("DEFAULT_ADMIN_EMAIL", "nick@nick.com")
 DEFAULT_ADMIN_USERNAME = os.environ.get("DEFAULT_ADMIN_USERNAME", "nicleary")
 DEFAULT_ADMIN_PASSWORD = os.environ.get("DEFAULT_ADMIN_PASSWORD", "defaultP@ss")
+
+# Celery Settings
+CELERY_TASK_TRACK_STARTED = True
+BROKER_URL = "amqp://admin:bigpass12345@rabbit:5672//"
+CELERY_RESULT_BACKEND = "django-db"
+CELERY_ACCEPT_CONTENT = ["application/json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_RESULT_SERIALIZER = "json"
+CELERY_ACKS_LATE = True
+CELERYD_PREFETCH_MULTIPLIER = 2

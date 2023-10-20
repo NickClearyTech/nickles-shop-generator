@@ -4,9 +4,16 @@ from rest_framework import routers
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
 from gen.viewsets.users import UserViewSet
+from gen.viewsets.systems import SystemViewSet
+from gen.viewsets.items import ItemViewSet
+from gen.viewsets.spells import SpellViewSet
 
 router = routers.SimpleRouter()
 router.register(r"user", UserViewSet, basename="user")
+router.register(r"system", SystemViewSet, basename="system")
+router.register(r"item", ItemViewSet, basename="item")
+router.register(r"spell", SpellViewSet, basename="spell")
+
 
 urlpatterns = [
     path("api/v1/", include(router.urls)),

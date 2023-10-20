@@ -9,11 +9,15 @@ class DefaultFields(models.Model):
 
     class Meta:
         abstract = True
+        ordering = ["pk"]
 
 
 class System(DefaultFields):
     abbreviation = models.CharField(max_length=8, null=False, default="NA")
     full_name = models.CharField(max_length=64, null=False, default="NA")
+
+    class Meta:
+        ordering = ["pk"]
 
 
 class ItemBase(DefaultFields):
@@ -42,11 +46,17 @@ class Item(ItemBase):
     magical = models.BooleanField(null=True, default=False)
     rarity = models.CharField(max_length=1, choices=RARITY_CHOICES, null=True)
 
+    class Meta:
+        ordering = ["pk"]
+
 
 class Spell(ItemBase):
     level = models.IntegerField(
         null=False, validators=[MinValueValidator(1), MaxValueValidator(9)]
     )
+
+    class Meta:
+        ordering = ["pk"]
 
 
 class ItemToShop(models.Model):
@@ -60,6 +70,7 @@ class ItemToShop(models.Model):
         constraints = [
             models.UniqueConstraint(fields=("item", "shop"), name="once_per_shop_item")
         ]
+        ordering = ["pk"]
 
 
 class SpellToShop(models.Model):
@@ -84,3 +95,6 @@ class Shop(DefaultFields):
         to=User, on_delete=models.CASCADE, null=True, db_index=True
     )
     name = models.CharField(max_length=128, null=False, default="My New Shop")
+
+    class Meta:
+        ordering = ["pk"]
