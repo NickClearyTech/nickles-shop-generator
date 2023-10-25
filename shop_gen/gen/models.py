@@ -48,6 +48,9 @@ class Item(ItemBase):
 
     class Meta:
         ordering = ["pk"]
+        constraints = [
+            models.UniqueConstraint(fields=("name", "owner", "system"), name="unique_name_per_owner_system_item")
+        ]
 
 
 class Spell(ItemBase):
@@ -57,6 +60,9 @@ class Spell(ItemBase):
 
     class Meta:
         ordering = ["pk"]
+        constraints = [
+            models.UniqueConstraint(fields=("name", "owner", "system"), name="unique_name_per_owner_system_spell")
+        ]
 
 
 class ItemToShop(models.Model):
@@ -86,6 +92,15 @@ class SpellToShop(models.Model):
                 fields=("spell", "shop"), name="once_per_shop_spell"
             )
         ]
+        indexes = [
+            models.Index("spell", "shop", name="spell_shop_composite_index")
+        ]
+
+
+class ShopWarning(DefaultFields):
+    error = models.BooleanField(default=False)
+    note = models.CharField(max_length=512)
+    shop = models.ForeignKey("Shop", related_name="warnings", on_delete=models.CASCADE)
 
 
 class Shop(DefaultFields):

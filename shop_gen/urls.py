@@ -7,12 +7,14 @@ from gen.viewsets.users import UserViewSet
 from gen.viewsets.systems import SystemViewSet
 from gen.viewsets.items import ItemViewSet
 from gen.viewsets.spells import SpellViewSet
+from gen.viewsets.shops import ShopViewSet
 
 router = routers.SimpleRouter()
 router.register(r"user", UserViewSet, basename="user")
 router.register(r"system", SystemViewSet, basename="system")
 router.register(r"item", ItemViewSet, basename="item")
 router.register(r"spell", SpellViewSet, basename="spell")
+router.register(r"shop", ShopViewSet, basename="shop")
 
 
 urlpatterns = [

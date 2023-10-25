@@ -9,7 +9,7 @@ services:
     volumes:
       - ./shop_gen:/shop_gen
     ports:
-      - 8080:8000
+      - 8000:8000
     command: [ 'bash', '-c', 'gunicorn --bind :8000 --workers 4 --reload wsgi:application' ]
     depends_on:
       - postgres
@@ -38,6 +38,41 @@ services:
     ports:
       - 5432:5432
     restart: "always"
+  rabbit:
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=bigpass12345
+    volumes:
+      - rabbit_data:/var/lib/rabbitmq
+    ports:
+      - 8080:8080
+      - 5672:5672
+    restart: "always"
+  flower:
+    image: mher/flower:0.9.5
+    environment:
+      - CELERY_BROKER_URL=amqp://admin:bigpass12345@rabbit:5672//
+      - CELERY_BACKEND_URL=redis://redis:6379/0
+      - FLOWER_PORT=5555
+      - FLOWER_PURGE_OFFLINE_WORKERS=10
+    ports:
+      - 5555:5555
+    depends_on:
+      - rabbit
+  celery_worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: celery -A celery_settings worker -l INFO
+    env_file:
+      - .env
+    volumes:
+      - ./shop_gen:/shop_gen
+    depends_on:
+      - rabbit
+      - postgres
 
 volumes:
   postgres_data:
+  rabbit_data:

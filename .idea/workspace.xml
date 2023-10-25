@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/fixtures.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/fixtures.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/test-entrypoint.sh" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/test-entrypoint.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,30 +28,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2WuvyZlTxXi74LhRuWe7JZQcxde" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop_gen/gen" />
       <recent name="$PROJECT_DIR$/shop_gen" />
     </key>
   </component>
@@ -59,6 +63,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -85,7 +90,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697595535406</updated>
-      <workItem from="1697595537486" duration="17200000" />
+      <workItem from="1697595537486" duration="37705000" />
+      <workItem from="1698164342545" duration="4038000" />
+      <workItem from="1698189801170" duration="1845000" />
     </task>
     <servers />
   </component>
