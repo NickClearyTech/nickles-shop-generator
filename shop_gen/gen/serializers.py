@@ -1,3 +1,4 @@
+from drf_spectacular.utils import extend_schema_field
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from gen.models import System, Item, Spell, Shop, SpellToShop, ItemToShop
@@ -83,18 +84,9 @@ class ShopToItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ItemToShop
-        exclude = ["pk"]
+        exclude = ["id", "shop"]
 
-    shop = serializers.SlugRelatedField(
-        many=True,
-        slug_field="name",
-        read_only=True
-    )
-    item = serializers.SlugRelatedField(
-        many=True,
-        slug_field="name",
-        read_only=True
-    )
+    item = ItemSerializer()
     quantity = serializers.IntegerField(default=1)
 
 
@@ -102,18 +94,9 @@ class ShopToSpellSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SpellToShop
-        exclude = ["pk"]
+        exclude = ["id", "shop"]
 
-    shop = serializers.SlugRelatedField(
-        many=True,
-        slug_field="name",
-        read_only=True
-    )
-    spell = serializers.SlugRelatedField(
-        many=True,
-        slug_field="name",
-        read_only=True
-    )
+    spell = SpellSerializer()
     quantity = serializers.IntegerField(default=1)
 
 
@@ -124,12 +107,50 @@ class ShopSerializer(serializers.ModelSerializer):
         fields = "__all__"
         depth = 1
 
-    owner = UserSerializer()
-    spells = serializers.ListField(
-        child=ShopToSpellSerializer()
+    owner = serializers.SlugRelatedField(
+        slug_field="username",
+        read_only=True
     )
-    items = serializers.ListField(
-        child=ShopToItemSerializer()
-    )
+
+    spells = serializers.SerializerMethodField("get_spells")
+    items = serializers.SerializerMethodField("get_items")
+
+    @extend_schema_field({
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "item": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "integer"
+                }
+            }
+        }
+    })
+    def get_items(self, shop):
+        item_queryset = ItemToShop.objects.filter(shop=shop)
+        serializer = ShopToItemSerializer(instance=item_queryset, many=True, context=self.context)
+        return serializer.data
+
+    @extend_schema_field({
+        "type": "array",
+        "items": {
+            "type": "object",
+            "properties": {
+                "item": {
+                    "type": "string"
+                },
+                "quantity": {
+                    "type": "integer"
+                }
+            }
+        }
+    })
+    def get_spells(self, shop):
+        spell_queryset = SpellToShop.objects.filter(shop=shop)
+        serializer = ShopToSpellSerializer(instance=spell_queryset, many=True,  context=self.context)
+        return serializer.data
 
 

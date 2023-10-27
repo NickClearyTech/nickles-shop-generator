@@ -8,6 +8,6 @@ from gen.serializers import SystemSerializer
 class SystemViewSet(
     viewsets.GenericViewSet, mixins.RetrieveModelMixin, mixins.ListModelMixin
 ):
-    queryset = System
+    queryset = System.objects.all()
     serializer_class = SystemSerializer
     permission_classes = [permissions.IsAuthenticated]

@@ -6,6 +6,10 @@ from rest_framework.response import Response
 
 from gen.serializers import UserSerializer, UserSelfSerializer
 
+from gen.serializers import ShopToItemSerializer
+
+from gen.models import Shop, ItemToShop
+
 
 class UserViewSet(viewsets.GenericViewSet,
                   mixins.RetrieveModelMixin,
@@ -23,6 +27,12 @@ class UserViewSet(viewsets.GenericViewSet,
 
     @action(detail=False, methods=["get"], url_path="me", url_name="Get Self", permission_classes=[permissions.IsAuthenticated])
     def get_me(self, request):
+
+        shop = Shop.objects.first()
+        queryset = ItemToShop.objects.filter(shop=shop)
+        serializer = ShopToItemSerializer(instance=queryset, many=True)
+        serializer.data
+
         serialized: UserSelfSerializer = UserSelfSerializer(instance=request.user)
         return Response(serialized.data, status=status.HTTP_200_OK)
 
