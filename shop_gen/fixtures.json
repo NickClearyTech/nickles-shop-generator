@@ -1,5 +1,18 @@
 [
   {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "is_superuser": false,
+      "username": "initial_user",
+      "first_name": "initial",
+      "last_name": "initial",
+      "email": "default@default.com",
+      "is_staff": false,
+      "is_active": false
+    }
+  },
+  {
     "model": "gen.system",
     "pk": 1,
     "fields": {

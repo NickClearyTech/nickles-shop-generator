@@ -8,10 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/fixtures.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/fixtures.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
