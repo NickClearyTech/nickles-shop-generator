@@ -2,6 +2,8 @@ from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
 
+from picklefield.fields import PickledObjectField
+
 
 class DefaultFields(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, null=True)
@@ -113,3 +115,22 @@ class Shop(DefaultFields):
 
     class Meta:
         ordering = ["pk"]
+
+
+class Job(DefaultFields):
+
+    class Status(models.TextChoices):
+        RECEIVED = "Received"
+        RUNNING = "Running"
+        COMPLETE = "Complete"
+        FAILURE = "Failure"
+        CANCELLED = "Cancelled"
+
+    class JobType(models.TextChoices):
+        GENERATE_SHOP = "Generate Shop"
+        IMPORT_FOUNDRY_ITEMS = "Import Foundry Items"
+
+    status = models.CharField(max_length=32, choices=Status.choices, default=Status.RECEIVED, db_index=True)
+    job_type = models.CharField(max_length=32, choices=JobType.choices, db_index=True)
+    launched_by = models.ForeignKey(to=User, on_delete=models.CASCADE, null=False, db_index=True)
+    job_parameters = PickledObjectField(null=False)

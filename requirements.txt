@@ -13,6 +13,7 @@ django-bootstrap5==23.3
 
 # Database
 psycopg2-binary==2.9.9
+django-picklefield==3.1
 
 # Webserver
 gunicorn==21.2.0
