@@ -38,28 +38,25 @@ services:
     ports:
       - 5432:5432
     restart: "always"
-  rabbit:
-    image: rabbitmq:3-management
-    environment:
-      - RABBITMQ_DEFAULT_USER=admin
-      - RABBITMQ_DEFAULT_PASS=bigpass12345
-    volumes:
-      - rabbit_data:/var/lib/rabbitmq
+  redis:
+    image: harbor.nicleary.com/dockerhub/redis:7.2.2
     ports:
-      - 8080:8080
-      - 5672:5672
-    restart: "always"
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+      - ./redis.conf:/etc/redis/redis.conf
+    command: ["redis-server", "/etc/redis/redis.conf"]
   flower:
     image: mher/flower:0.9.5
     environment:
-      - CELERY_BROKER_URL=amqp://admin:bigpass12345@rabbit:5672//
-      - CELERY_BACKEND_URL=redis://redis:6379/0
+      - CELERY_BROKER_URL=redis://default:bigpass12345@redis:6379//
+      - CELERY_BACKEND_URL=redis://default:bigpass12345@redis:6379//
       - FLOWER_PORT=5555
       - FLOWER_PURGE_OFFLINE_WORKERS=10
     ports:
       - 5555:5555
     depends_on:
-      - rabbit
+      - redis
   celery_worker:
     build:
       context: .
@@ -70,9 +67,9 @@ services:
     volumes:
       - ./shop_gen:/shop_gen
     depends_on:
-      - rabbit
+      - redis
       - postgres
 
 volumes:
   postgres_data:
-  rabbit_data:
+  redis_data:

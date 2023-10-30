@@ -152,7 +152,7 @@ DEFAULT_ADMIN_PASSWORD = os.environ.get("DEFAULT_ADMIN_PASSWORD", "defaultP@ss")
 
 # Celery Settings
 CELERY_TASK_TRACK_STARTED = True
-BROKER_URL = "amqp://admin:bigpass12345@rabbit:5672//"
+BROKER_URL = "redis://default:bigpass12345@redis:6379//"
 CELERY_RESULT_BACKEND = "django-db"
 CELERY_ACCEPT_CONTENT = ["application/json"]
 CELERY_TASK_SERIALIZER = "json"

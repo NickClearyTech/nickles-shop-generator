@@ -4,7 +4,7 @@ from celery import Celery
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
-app = Celery("gen", include=["gen.tasks.test_task"])
+app = Celery("gen", include=["gen.tasks.generate_shop"])
 
 app.config_from_object("django.conf:settings")
 app.worker_prefetch_multiplier = 2

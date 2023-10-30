@@ -18,7 +18,7 @@ def test_min_item_price():
             "rarity": "C",
         }
     )
-    item.owner = User.objects.create(username="someone", password="password")
+    item.owner = User.objects.create()
     item.system = System.objects.get(abbreviation="DnD5e")
     with pytest.raises(ValidationError):
         item.full_clean()
@@ -36,7 +36,7 @@ def test_min_spell_level():
             "level": 0,
         }
     )
-    spell.owner = User.objects.create(username="someone", password="password")
+    spell.owner = User.objects.create()
     spell.system = System.objects.get(abbreviation="DnD5e")
     with pytest.raises(ValidationError):
         spell.full_clean()
@@ -58,7 +58,7 @@ def test_max_spell_level():
             "level": 10,
         }
     )
-    spell.owner = User.objects.create(username="someone", password="password")
+    spell.owner = User.objects.create()
     spell.system = System.objects.get(abbreviation="DnD5e")
     with pytest.raises(ValidationError):
         spell.full_clean()
