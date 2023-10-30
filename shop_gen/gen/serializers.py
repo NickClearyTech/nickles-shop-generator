@@ -79,6 +79,13 @@ class ShopSettingsSerializer(serializers.Serializer):
     items = ItemShopSettings(many=True)
     spells = SpellShopSettings(many=True)
 
+    def validate_items(self, value):
+        rarities = ["C", "U", "R", "V", "L"]
+        for item_setting in value:
+            if value.rarity in rarities:
+                rarities.remove(value.rarity)
+        return value
+
 
 class ShopToItemSerializer(serializers.ModelSerializer):
 
