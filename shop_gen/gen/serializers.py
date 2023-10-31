@@ -58,7 +58,6 @@ class SpellSerializer(serializers.ModelSerializer):
 
 
 class ItemShopSettings(serializers.Serializer):
-
     min_number = serializers.IntegerField(min_value=0)
     max_number = serializers.IntegerField(min_value=0)
     allow_duplicates = serializers.BooleanField(default=True)
@@ -66,7 +65,6 @@ class ItemShopSettings(serializers.Serializer):
 
 
 class SpellShopSettings(serializers.Serializer):
-
     min_number = serializers.IntegerField(min_value=0)
     max_number = serializers.IntegerField(min_value=0)
     allow_duplicates = serializers.BooleanField(default=True)
@@ -74,23 +72,42 @@ class SpellShopSettings(serializers.Serializer):
 
 
 class ShopSettingsSerializer(serializers.Serializer):
-
     name = serializers.CharField(max_length=128, default="My New Shop")
     items = ItemShopSettings(many=True)
     spells = SpellShopSettings(many=True)
 
     def validate_items(self, value):
         rarities = ["C", "U", "R", "V", "L"]
+        if len(value) != 5:
+            raise serializers.ValidationError(
+                "Invalid number of item settings, should be exactly 5"
+            )
         for item_setting in value:
-            if value.rarity in rarities:
-                rarities.remove(value.rarity)
+            if item_setting["rarity"].upper() in rarities:
+                rarities.remove(item_setting["rarity"])
             else:
-                raise serializers.ValidationError("")
+                raise serializers.ValidationError(
+                    f"Multiple item settings have the same rarity, or invalid rarity specified: {item_setting['rarity']}"
+                )
+        return value
+
+    def validate_spells(self, value):
+        levels = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        if len(value) != 9:
+            raise serializers.ValidationError(
+                "Invalid number of spell settings, should be exactly 9"
+            )
+        for spell_setting in value:
+            if spell_setting["level"] in levels:
+                levels.remove(spell_setting["level"])
+            else:
+                raise serializers.ValidationError(
+                    f"Multiple spell settings have the same level, or an invalid spell level was supplied: {spell_setting['level']}"
+                )
         return value
 
 
 class ShopToItemSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = ItemToShop
         exclude = ["id", "shop"]
@@ -100,7 +117,6 @@ class ShopToItemSerializer(serializers.ModelSerializer):
 
 
 class ShopToSpellSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = SpellToShop
         exclude = ["id", "shop"]
@@ -110,56 +126,50 @@ class ShopToSpellSerializer(serializers.ModelSerializer):
 
 
 class ShopSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Shop
         fields = "__all__"
         depth = 1
 
-    owner = serializers.SlugRelatedField(
-        slug_field="username",
-        read_only=True
-    )
+    owner = serializers.SlugRelatedField(slug_field="username", read_only=True)
 
     spells = serializers.SerializerMethodField("get_spells")
     items = serializers.SerializerMethodField("get_items")
 
-    @extend_schema_field({
-        "type": "array",
-        "items": {
-            "type": "object",
-            "properties": {
-                "item": {
-                    "type": "string"
+    @extend_schema_field(
+        {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "item": {"type": "string"},
+                    "quantity": {"type": "integer"},
                 },
-                "quantity": {
-                    "type": "integer"
-                }
-            }
+            },
         }
-    })
+    )
     def get_items(self, shop):
         item_queryset = ItemToShop.objects.filter(shop=shop)
-        serializer = ShopToItemSerializer(instance=item_queryset, many=True, context=self.context)
+        serializer = ShopToItemSerializer(
+            instance=item_queryset, many=True, context=self.context
+        )
         return serializer.data
 
-    @extend_schema_field({
-        "type": "array",
-        "items": {
-            "type": "object",
-            "properties": {
-                "item": {
-                    "type": "string"
+    @extend_schema_field(
+        {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "item": {"type": "string"},
+                    "quantity": {"type": "integer"},
                 },
-                "quantity": {
-                    "type": "integer"
-                }
-            }
+            },
         }
-    })
+    )
     def get_spells(self, shop):
         spell_queryset = SpellToShop.objects.filter(shop=shop)
-        serializer = ShopToSpellSerializer(instance=spell_queryset, many=True,  context=self.context)
+        serializer = ShopToSpellSerializer(
+            instance=spell_queryset, many=True, context=self.context
+        )
         return serializer.data
-
-

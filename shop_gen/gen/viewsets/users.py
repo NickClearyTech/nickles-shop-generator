@@ -11,9 +11,9 @@ from gen.serializers import ShopToItemSerializer
 from gen.models import Shop, ItemToShop
 
 
-class UserViewSet(viewsets.GenericViewSet,
-                  mixins.RetrieveModelMixin,
-                  mixins.ListModelMixin):
+class UserViewSet(
+    viewsets.GenericViewSet, mixins.RetrieveModelMixin, mixins.ListModelMixin
+):
     def get_queryset(self):
         if self.action == "get_me":
             return User.objects.get(self.request.user)
@@ -23,11 +23,17 @@ class UserViewSet(viewsets.GenericViewSet,
         if self.action == "get_me":
             return UserSelfSerializer
         return UserSerializer
+
     permission_classes = [permissions.IsAdminUser]
 
-    @action(detail=False, methods=["get"], url_path="me", url_name="Get Self", permission_classes=[permissions.IsAuthenticated])
+    @action(
+        detail=False,
+        methods=["get"],
+        url_path="me",
+        url_name="Get Self",
+        permission_classes=[permissions.IsAuthenticated],
+    )
     def get_me(self, request):
-
         shop = Shop.objects.first()
         queryset = ItemToShop.objects.filter(shop=shop)
         serializer = ShopToItemSerializer(instance=queryset, many=True)
@@ -35,4 +41,3 @@ class UserViewSet(viewsets.GenericViewSet,
 
         serialized: UserSelfSerializer = UserSelfSerializer(instance=request.user)
         return Response(serialized.data, status=status.HTTP_200_OK)
-

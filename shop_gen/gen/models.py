@@ -51,7 +51,10 @@ class Item(ItemBase):
     class Meta:
         ordering = ["pk"]
         constraints = [
-            models.UniqueConstraint(fields=("name", "owner", "system"), name="unique_name_per_owner_system_item")
+            models.UniqueConstraint(
+                fields=("name", "owner", "system"),
+                name="unique_name_per_owner_system_item",
+            )
         ]
 
 
@@ -63,7 +66,10 @@ class Spell(ItemBase):
     class Meta:
         ordering = ["pk"]
         constraints = [
-            models.UniqueConstraint(fields=("name", "owner", "system"), name="unique_name_per_owner_system_spell")
+            models.UniqueConstraint(
+                fields=("name", "owner", "system"),
+                name="unique_name_per_owner_system_spell",
+            )
         ]
 
 
@@ -94,9 +100,7 @@ class SpellToShop(models.Model):
                 fields=("spell", "shop"), name="once_per_shop_spell"
             )
         ]
-        indexes = [
-            models.Index("spell", "shop", name="spell_shop_composite_index")
-        ]
+        indexes = [models.Index("spell", "shop", name="spell_shop_composite_index")]
 
 
 class ShopWarning(DefaultFields):
@@ -118,7 +122,6 @@ class Shop(DefaultFields):
 
 
 class Job(DefaultFields):
-
     class Status(models.TextChoices):
         RECEIVED = "Received"
         RUNNING = "Running"
@@ -130,7 +133,11 @@ class Job(DefaultFields):
         GENERATE_SHOP = "Generate Shop"
         IMPORT_FOUNDRY_ITEMS = "Import Foundry Items"
 
-    status = models.CharField(max_length=32, choices=Status.choices, default=Status.RECEIVED, db_index=True)
+    status = models.CharField(
+        max_length=32, choices=Status.choices, default=Status.RECEIVED, db_index=True
+    )
     job_type = models.CharField(max_length=32, choices=JobType.choices, db_index=True)
-    launched_by = models.ForeignKey(to=User, on_delete=models.CASCADE, null=False, db_index=True)
+    launched_by = models.ForeignKey(
+        to=User, on_delete=models.CASCADE, null=False, db_index=True
+    )
     job_parameters = PickledObjectField(null=False)
