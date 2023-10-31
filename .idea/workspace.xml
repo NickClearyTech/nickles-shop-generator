@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/querysets.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/querysets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/gen/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/tasks/generate_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/tasks/generate_shop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

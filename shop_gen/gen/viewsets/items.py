@@ -8,7 +8,7 @@ class ItemViewSet(
     viewsets.GenericViewSet, mixins.ListModelMixin, mixins.RetrieveModelMixin
 ):
     def get_queryset(self):
-        return get_items(self.request)
+        return get_items(self.request.user)
 
     serializer_class = ItemSerializer
     permission_classes = [permissions.IsAuthenticated]

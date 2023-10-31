@@ -1,7 +1,7 @@
 from drf_spectacular.utils import extend_schema_field
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from gen.models import System, Item, Spell, Shop, SpellToShop, ItemToShop
+from gen.models import System, Item, Spell, Shop, SpellToShop, ItemToShop, Job
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -173,3 +173,13 @@ class ShopSerializer(serializers.ModelSerializer):
             instance=spell_queryset, many=True, context=self.context
         )
         return serializer.data
+
+
+class JobSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Job
+        fields = "__all__"
+        depth = 1
+
+    job_parameters = serializers.DictField()
+    launched_by = serializers.SlugRelatedField(slug_field="username", read_only=True)

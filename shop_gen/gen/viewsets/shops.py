@@ -1,7 +1,7 @@
 from rest_framework.response import Response
 from rest_framework import mixins, permissions, viewsets, status
 
-from gen.serializers import ShopSerializer, ShopSettingsSerializer
+from gen.serializers import ShopSerializer, ShopSettingsSerializer, JobSerializer
 from gen.models import Shop, Job
 from gen.tasks.generate_shop import generate_shop
 
@@ -33,4 +33,8 @@ class ShopViewSet(
 
         generate_shop.apply_async(args=[job_object.id])
 
-        return Response({"ok": "okay"}, status=status.HTTP_200_OK)
+        serializer = JobSerializer(
+            instance=job_object
+        )
+
+        return Response(serializer.data, status=status.HTTP_200_OK)
