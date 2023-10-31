@@ -84,6 +84,8 @@ class ShopSettingsSerializer(serializers.Serializer):
         for item_setting in value:
             if value.rarity in rarities:
                 rarities.remove(value.rarity)
+            else:
+                raise serializers.ValidationError("")
         return value
 
 
