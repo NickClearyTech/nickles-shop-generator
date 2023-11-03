@@ -58,15 +58,15 @@ class SpellSerializer(serializers.ModelSerializer):
 
 
 class ItemShopSettings(serializers.Serializer):
-    min_number = serializers.IntegerField(min_value=0)
-    max_number = serializers.IntegerField(min_value=0)
+    min_number = serializers.IntegerField(min_value=0, max_value=10000)
+    max_number = serializers.IntegerField(min_value=0, max_value=10000)
     allow_duplicates = serializers.BooleanField(default=True)
     rarity = serializers.CharField(min_length=1, max_length=1)
 
 
 class SpellShopSettings(serializers.Serializer):
-    min_number = serializers.IntegerField(min_value=0)
-    max_number = serializers.IntegerField(min_value=0)
+    min_number = serializers.IntegerField(min_value=0, max_value=10000)
+    max_number = serializers.IntegerField(min_value=0, max_value=10000)
     allow_duplicates = serializers.BooleanField(default=True)
     level = serializers.IntegerField(min_value=1, max_value=9)
 

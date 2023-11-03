@@ -33,8 +33,6 @@ class ShopViewSet(
 
         generate_shop.apply_async(args=[job_object.id])
 
-        serializer = JobSerializer(
-            instance=job_object
-        )
+        serializer = JobSerializer(instance=job_object)
 
         return Response(serializer.data, status=status.HTTP_200_OK)

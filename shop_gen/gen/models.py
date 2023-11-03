@@ -141,3 +141,4 @@ class Job(DefaultFields):
         to=User, on_delete=models.CASCADE, null=False, db_index=True
     )
     job_parameters = PickledObjectField(null=False)
+    job_result = PickledObjectField(null=True)
