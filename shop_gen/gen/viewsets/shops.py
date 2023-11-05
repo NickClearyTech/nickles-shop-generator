@@ -2,9 +2,10 @@ from rest_framework.response import Response
 from rest_framework import mixins, permissions, viewsets, status
 
 from gen.serializers import ShopSerializer, ShopSettingsSerializer, JobSerializer
-from gen.models import Shop, Job
+from gen.models import Shop, Job, ItemToShop, SpellToShop
 from gen.tasks.generate_shop import generate_shop
 
+from django.db.models import Prefetch
 
 class ShopViewSet(
     viewsets.GenericViewSet,
@@ -14,7 +15,7 @@ class ShopViewSet(
 ):
     def get_queryset(self):
         if self.request.user.is_superuser:
-            return Shop.objects.all()
+            return Shop.objects.select_related("owner")
         return Shop.objects.filter(owner=self.request.user)
 
     serializer_class = ShopSerializer

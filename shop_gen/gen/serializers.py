@@ -182,4 +182,5 @@ class JobSerializer(serializers.ModelSerializer):
         depth = 1
 
     job_parameters = serializers.DictField()
+    job_result = serializers.DictField()
     launched_by = serializers.SlugRelatedField(slug_field="username", read_only=True)
