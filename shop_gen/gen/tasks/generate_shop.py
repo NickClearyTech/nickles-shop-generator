@@ -129,9 +129,7 @@ def generate_shop(self, job_id: int):
 
     shop.save()
 
-    job_object.job_result = {
-        "shop_id": shop.id
-    }
+    job_object.job_result = {"shop_id": shop.id}
     job_object.status = Job.Status.COMPLETE
     job_object.save()
 

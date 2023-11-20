@@ -33,7 +33,7 @@ def test_min_spell_level():
             "price": 50,
             "public": True,
             "sourcebook": "Ravenloft",
-            "level": 0,
+            "level": -1,
         }
     )
     spell.owner = User.objects.create()

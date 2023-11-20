@@ -5,15 +5,19 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('gen', '0010_job_job_result'),
+        ("gen", "0010_job_job_result"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='spell',
-            name='level',
-            field=models.IntegerField(validators=[django.core.validators.MinValueValidator(0), django.core.validators.MaxValueValidator(9)]),
+            model_name="spell",
+            name="level",
+            field=models.IntegerField(
+                validators=[
+                    django.core.validators.MinValueValidator(0),
+                    django.core.validators.MaxValueValidator(9),
+                ]
+            ),
         ),
     ]

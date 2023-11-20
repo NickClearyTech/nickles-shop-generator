@@ -34,7 +34,7 @@ for item in data["item"]:
                 "rarity": str(item["rarity"][0]).upper()
                 if "rarity" in item.keys()
                 else None,
-                "owner": 1
+                "owner": 1,
             },
         }
     )
@@ -53,7 +53,7 @@ current_pk = 1
 with open("spells.json") as fh:
     data = json.load(fh)
 
-for spell in data ["spells"]:
+for spell in data["spells"]:
     all_spells.append(
         {
             "model": "gen.spell",
@@ -66,11 +66,9 @@ for spell in data ["spells"]:
                 "system": 1,
                 "public": True,
                 "price": 0,
-                "level": spell["level"]
-                if "level" in spell.keys()
-                else None,
-                "owner": 1
-            }
+                "level": spell["level"] if "level" in spell.keys() else None,
+                "owner": 1,
+            },
         }
     )
     current_pk += 1

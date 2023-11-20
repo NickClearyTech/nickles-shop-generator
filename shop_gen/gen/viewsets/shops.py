@@ -9,6 +9,7 @@ from gen.tasks.generate_shop import generate_shop
 
 from django.db.models import Prefetch
 
+
 class ShopViewSet(
     viewsets.GenericViewSet,
     mixins.ListModelMixin,
@@ -40,16 +41,25 @@ class ShopViewSet(
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    @action(detail=True, methods=["post"], url_path=r"(?P<item_id>\d+)/(?P<quantity>\d+)", name="ShopItem")
+    @action(
+        detail=True,
+        methods=["post"],
+        url_path=r"(?P<item_id>\d+)/(?P<quantity>\d+)",
+        name="ShopItem",
+    )
     def edit_item_quantity_in_shop(self, request, pk=None, item_id=None, quantity=None):
         try:
             shop = Shop.objects.get(pk=pk)
         except ObjectDoesNotExist:
-            return Response({"Not Found": "Shop not found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response(
+                {"Not Found": "Shop not found"}, status=status.HTTP_404_NOT_FOUND
+            )
         try:
             shop_to_item: ItemToShop = ItemToShop.objects.get(shop=pk, item=item_id)
         except ObjectDoesNotExist:
-            return Response({"Not Found": "Item not found"}, status=status.HTTP_404_NOT_FOUND)
+            return Response(
+                {"Not Found": "Item not found"}, status=status.HTTP_404_NOT_FOUND
+            )
         int_quant = int(quantity)
 
         if quantity is None or int_quant < 0:
