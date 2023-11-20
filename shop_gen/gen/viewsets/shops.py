@@ -1,3 +1,5 @@
+from django.core.exceptions import ObjectDoesNotExist
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import mixins, permissions, viewsets, status
 
@@ -37,3 +39,25 @@ class ShopViewSet(
         serializer = JobSerializer(instance=job_object)
 
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=["post"], url_path=r"(?P<item_id>\d+)/(?P<quantity>\d+)", name="ShopItem")
+    def edit_item_quantity_in_shop(self, request, pk=None, item_id=None, quantity=None):
+        try:
+            shop = Shop.objects.get(pk=pk)
+        except ObjectDoesNotExist:
+            return Response({"Not Found": "Shop not found"}, status=status.HTTP_404_NOT_FOUND)
+        try:
+            shop_to_item: ItemToShop = ItemToShop.objects.get(shop=pk, item=item_id)
+        except ObjectDoesNotExist:
+            return Response({"Not Found": "Item not found"}, status=status.HTTP_404_NOT_FOUND)
+        int_quant = int(quantity)
+
+        if quantity is None or int_quant < 0:
+            return Response({"Invalid": "Quantity must be greater than or equal to 0"})
+        if int_quant == 0:
+            shop_to_item.delete()
+        else:
+            shop_to_item.quantity = int_quant
+            shop_to_item.save()
+
+        return Response(ShopSerializer(instance=shop).data, status=status.HTTP_200_OK)

@@ -34,6 +34,7 @@ for item in data["item"]:
                 "rarity": str(item["rarity"][0]).upper()
                 if "rarity" in item.keys()
                 else None,
+                "owner": 1
             },
         }
     )
@@ -43,5 +44,40 @@ for item in data["item"]:
 json_object = json.dumps(all_items, indent=4)
 
 # Writing to fixtures.json
-with open("../shop_gen/fixtures.json", "w") as outfile:
+with open("fixtures_items.json", "w") as outfile:
+    outfile.write(json_object)
+
+all_spells = []
+current_pk = 1
+
+with open("spells.json") as fh:
+    data = json.load(fh)
+
+for spell in data ["spells"]:
+    all_spells.append(
+        {
+            "model": "gen.spell",
+            "pk": current_pk,
+            "fields": {
+                "name": spell["name"],
+                "description": get_desc_from_entries(spell["entries"])
+                if "entries" in spell.keys()
+                else "",
+                "system": 1,
+                "public": True,
+                "price": 0,
+                "level": spell["level"]
+                if "level" in spell.keys()
+                else None,
+                "owner": 1
+            }
+        }
+    )
+    current_pk += 1
+
+# Serializing json
+json_object = json.dumps(all_spells, indent=4)
+
+# Writing to fixtures.json
+with open("fixtures_spells.json", "w") as outfile:
     outfile.write(json_object)

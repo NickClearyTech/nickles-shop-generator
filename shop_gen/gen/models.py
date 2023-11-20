@@ -60,7 +60,7 @@ class Item(ItemBase):
 
 class Spell(ItemBase):
     level = models.IntegerField(
-        null=False, validators=[MinValueValidator(1), MaxValueValidator(9)]
+        null=False, validators=[MinValueValidator(0), MaxValueValidator(9)]
     )
 
     class Meta:

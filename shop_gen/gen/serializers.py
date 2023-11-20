@@ -112,7 +112,7 @@ class ShopToItemSerializer(serializers.ModelSerializer):
         model = ItemToShop
         exclude = ["id", "shop"]
 
-    item = ItemSerializer()
+    item = serializers.SlugRelatedField(slug_field="id", read_only=True)
     quantity = serializers.IntegerField(default=1)
 
 
@@ -121,7 +121,7 @@ class ShopToSpellSerializer(serializers.ModelSerializer):
         model = SpellToShop
         exclude = ["id", "shop"]
 
-    spell = SpellSerializer()
+    spell = serializers.SlugRelatedField(slug_field="id", read_only=True)
     quantity = serializers.IntegerField(default=1)
 
 
