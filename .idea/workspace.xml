@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shop_gen/gen/templates" />
       <recent name="$PROJECT_DIR$/shop_gen/gen" />
       <recent name="$PROJECT_DIR$/shop_gen" />
     </key>
@@ -90,6 +93,7 @@
       <workItem from="1699664628974" duration="551000" />
       <workItem from="1699827048196" duration="19000" />
       <workItem from="1700443610848" duration="3520000" />
+      <workItem from="1700452030901" duration="1788000" />
     </task>
     <servers />
   </component>

@@ -10,6 +10,8 @@ from gen.viewsets.spells import SpellViewSet
 from gen.viewsets.shops import ShopViewSet
 from gen.viewsets.jobs import JobViewSet
 
+from gen.views.shop import shop_detail
+
 router = routers.SimpleRouter()
 router.register(r"user", UserViewSet, basename="user")
 router.register(r"system", SystemViewSet, basename="system")
@@ -28,4 +30,5 @@ urlpatterns = [
         SpectacularSwaggerView.as_view(url_name="schema"),
         name="swagger-ui",
     ),
+    path('shop/<id>', shop_detail, name='shop_detail')
 ]
