@@ -3,26 +3,11 @@ services:
   backend:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./ShopGen/Dockerfile
     env_file:
       - .env
-    volumes:
-      - ./shop_gen:/shop_gen
     ports:
       - 8000:8000
-    command: [ 'bash', '-c', 'gunicorn --bind :8000 --workers 4 --reload wsgi:application' ]
-    depends_on:
-      - postgres
-      - initializer
-  initializer:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    env_file:
-      - .env
-    volumes:
-      - ./shop_gen:/shop_gen
-    command: [ 'bash', '-c', 'python3 manage.py migrate && python3 manage.py loaddata fixtures.json && python3 manage.py runscript initializer' ]
     depends_on:
       - postgres
   postgres:
@@ -38,38 +23,6 @@ services:
     ports:
       - 5432:5432
     restart: "always"
-  redis:
-    image: harbor.nicleary.com/dockerhub/redis:7.2.2
-    ports:
-      - 6379:6379
-    volumes:
-      - redis_data:/data
-      - ./redis.conf:/etc/redis/redis.conf
-    command: ["redis-server", "/etc/redis/redis.conf"]
-  flower:
-    image: mher/flower:0.9.5
-    environment:
-      - CELERY_BROKER_URL=redis://default:bigpass12345@redis:6379//
-      - CELERY_BACKEND_URL=redis://default:bigpass12345@redis:6379//
-      - FLOWER_PORT=5555
-      - FLOWER_PURGE_OFFLINE_WORKERS=10
-    ports:
-      - 5555:5555
-    depends_on:
-      - redis
-  celery_worker:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    command: celery -A celery_settings worker -l INFO
-    env_file:
-      - .env
-    volumes:
-      - ./shop_gen:/shop_gen
-    depends_on:
-      - redis
-      - postgres
 
 volumes:
   postgres_data:
-  redis_data:
