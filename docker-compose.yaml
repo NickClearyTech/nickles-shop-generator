@@ -3,11 +3,11 @@ services:
   backend:
     build:
       context: .
-      dockerfile: ./ShopGen/Dockerfile
+      dockerfile: ./ShopGen.Server/Dockerfile
     env_file:
       - .env
     ports:
-      - 8000:8000
+      - 8000:80
     depends_on:
       - postgres
   postgres:
