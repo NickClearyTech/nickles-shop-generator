@@ -11,6 +11,7 @@ public sealed class SystemEntity : IIdEntity, ICreatedAtUtcEntity, IUpdatedAtUtc
     public DateTime UpdatedAtUtc { get; set; }
     public string FullName { get; set; }
     public string AbbreviatedName { get; set; }
+    public ICollection<SourcebookEntity> Books = new List<SourcebookEntity>();
     
     internal sealed class SystemEntityConfiguration : IEntityTypeConfiguration<SystemEntity>
     {

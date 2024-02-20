@@ -7,10 +7,12 @@ services:
     env_file:
       - .env
     ports:
-      - 8000:80
+      - 8080:8080
     depends_on:
       migrations:
           condition: service_completed_successfully
+      redis:
+        condition: service_started
   postgres:
     image: postgres:15-alpine
     volumes:
@@ -25,9 +27,9 @@ services:
       - 5432:5432
     restart: "always"
     healthcheck:
-      test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
-      interval: 10s
-      timeout: 3s
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 1s
+      timeout: 2s
       retries: 3
   migrations:
     build:
@@ -36,11 +38,21 @@ services:
     env_file:
       - .env
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
     entrypoint:
       - "bash"
       - "-c"
       - "dotnet ef database update --project ShopGen.Data --startup-project ShopGen.Server"
+  redis:
+    image: redis:7.2.2
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+      - ./redis.conf:/etc/redis/redis.conf
+    command: ["redis-server", "/etc/redis/redis.conf"]
 
 volumes:
   postgres_data:
+  redis_data:

@@ -1,9 +1,7 @@
-using Microsoft.AspNetCore.Components.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using ShopGen.Areas.Identity;
 using ShopGen.Data;
 using ShopGen.Utils;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,14 +12,15 @@ builder.Services.AddDbContext<ShopGenContext>(options =>
 
 builder.Services.AddHealthChecks();
 
+// Confnigure redis backplane for signalR
+builder.Services.AddSignalR().AddStackExchangeRedis(GetConnectionString.GetRedisConnectionString());
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ShopGenContext>();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services
-    .AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
-builder.Services.AddSingleton<WeatherForecastService>();
+
+// Register mudblazor
+builder.Services.AddMudServices();
 
 var app = builder.Build();
 

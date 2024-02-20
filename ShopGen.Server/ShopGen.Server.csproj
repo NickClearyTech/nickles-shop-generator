@@ -16,6 +16,8 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.2"/>
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2"/>
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR.StackExchangeRedis" Version="8.0.2"/>
+        <PackageReference Include="MudBlazor" Version="6.16.0" />
     </ItemGroup>
     
     <ItemGroup>
@@ -26,6 +28,11 @@
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Areas\Identity\Pages\Account\LogOut.cshtml" />
+      <_ContentIncludedByDefault Remove="Areas\Identity\Pages\Shared\_LoginPartial.cshtml" />
     </ItemGroup>
 
 </Project>
