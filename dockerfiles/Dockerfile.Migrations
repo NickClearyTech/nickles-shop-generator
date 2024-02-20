@@ -2,11 +2,10 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ENV PATH $PATH:/root/.dotnet/tools
 WORKDIR /src
 
-# Install entity framework cli for dnd
+# Install entity framework cli for migrations
 RUN dotnet tool install --global dotnet-ef
 
 COPY ShopGen.Data ShopGen.Data
 COPY ShopGen.Server ShopGen.Server
-COPY ShopGen.Test ShopGen.Test
 
-RUN dotnet restore "./ShopGen.Test/ShopGen.Test.csproj"
+RUN dotnet restore "./ShopGen.Server/ShopGen.Server.csproj"

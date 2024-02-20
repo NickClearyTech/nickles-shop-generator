@@ -1,0 +1,6 @@
+.idea/
+.github/
+dockerfiles/
+*/obj/
+*/bin/
+docker-compose.yaml

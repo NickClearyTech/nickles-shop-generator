@@ -9,7 +9,8 @@ services:
     ports:
       - 8000:80
     depends_on:
-      - postgres
+      migrations:
+          condition: service_completed_successfully
   postgres:
     image: postgres:15-alpine
     volumes:
@@ -23,6 +24,23 @@ services:
     ports:
       - 5432:5432
     restart: "always"
+    healthcheck:
+      test: ["CMD-SHELL", "sh -c 'pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}'"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+  migrations:
+    build:
+      context: .
+      dockerfile: ./dockerfiles/Dockerfile.Migrations
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    entrypoint:
+      - "bash"
+      - "-c"
+      - "dotnet ef database update --project ShopGen.Data --startup-project ShopGen.Server"
 
 volumes:
   postgres_data:

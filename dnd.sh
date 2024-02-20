@@ -17,6 +17,13 @@ elif [ "$1" = "format" ]; then
     shift
     docker build -f $DOCKERFILE_TEST -t $DOCKER_IMAGE_NAME .
     docker run -v ${PWD}:/src $DOCKER_IMAGE_NAME dotnet format /src/ShopGen.sln "$@"
+elif [ "$1" = "migrate" ]; then
+    if [ -z "$2" ]; then
+        echo "Must provide a migration name"
+        exit 1
+    fi
+    docker build -f $DOCKERFILE_TEST -t $DOCKER_IMAGE_NAME .
+    docker run -v ${PWD}:/src $DOCKER_IMAGE_NAME dotnet ef migrations add $2 --project ShopGen.Data --startup-project ShopGen.Server
 else 
     docker build -f $DOCKERFILE_TEST -t $DOCKER_IMAGE_NAME .
     docker run -v ${PWD}:/src $DOCKER_IMAGE_NAME dotnet "$@"

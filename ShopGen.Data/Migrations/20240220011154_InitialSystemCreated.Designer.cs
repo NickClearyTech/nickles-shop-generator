@@ -12,7 +12,7 @@ using ShopGen.Data;
 namespace ShopGen.Data.Migrations
 {
     [DbContext(typeof(ShopGenContext))]
-    [Migration("20240219223219_InitialSystemCreated")]
+    [Migration("20240220011154_InitialSystemCreated")]
     partial class InitialSystemCreated
     {
         /// <inheritdoc />
