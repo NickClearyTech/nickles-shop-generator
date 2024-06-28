@@ -1,6 +1,7 @@
 from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.db import models
+from gen.lookups import ItemType
 
 from picklefield.fields import PickledObjectField
 
@@ -22,6 +23,20 @@ class System(DefaultFields):
         ordering = ["pk"]
 
 
+class Book(DefaultFields):
+
+    system = models.ForeignKey(System, on_delete=models.CASCADE, related_name="books")
+    abbreviation = models.CharField(max_length=32, null=False, db_index=True)
+    full_name = models.CharField(max_length=256, null=False, db_index=False)
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                fields=("abbreviation", "system"), name="unique_system_abbreviation"
+            )
+        ]
+
+
 class ItemBase(DefaultFields):
     name = models.CharField(max_length=128, null=False)
     description = models.CharField(max_length=4096, null=True)
@@ -31,7 +46,9 @@ class ItemBase(DefaultFields):
     price = models.IntegerField(default=0, validators=[MinValueValidator(0)])
     public = models.BooleanField(db_index=True)
     owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True, db_index=True)
-    sourcebook = models.CharField(null=True, max_length=32, db_index=True)
+    sourcebook = models.ForeignKey(
+        Book, on_delete=models.CASCADE, null=True, db_index=True
+    )
 
     class Meta:
         abstract = True
@@ -47,13 +64,16 @@ class Item(ItemBase):
     ]
     magical = models.BooleanField(null=True, default=False)
     rarity = models.CharField(max_length=1, choices=RARITY_CHOICES, null=True)
+    type = models.CharField(
+        max_length=4, null=True, db_index=True, choices=ItemType.choices
+    )
 
     class Meta:
         ordering = ["pk"]
         constraints = [
             models.UniqueConstraint(
-                fields=("name", "owner", "system"),
-                name="unique_name_per_owner_system_item",
+                fields=("name", "owner", "system", "sourcebook"),
+                name="unique_name_per_owner_system_sourcebook_item",
             )
         ]
 

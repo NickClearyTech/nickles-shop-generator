@@ -1,7 +1,7 @@
 import pytest
 from rest_framework import serializers
 
-from gen.serializers import ShopSettingsSerializer
+from gen.serializers import ShopSettingsSerializer, ItemShopSettings
 import copy
 
 valid_serializer_data = {
@@ -78,3 +78,15 @@ def test_too_few_items():
     shop_settings = ShopSettingsSerializer(data=test_data)
     with pytest.raises(serializers.ValidationError):
         shop_settings.is_valid(raise_exception=True)
+
+
+def test_invalid_item_settings():
+    test_data = {
+        "min_number": 1,
+        "max_number": 10,
+        "allow_duplicates": True,
+        "rarity": "X",
+    }
+    item_settings = ItemShopSettings(data=test_data)
+    with pytest.raises(serializers.ValidationError):
+        item_settings.is_valid(raise_exception=True)

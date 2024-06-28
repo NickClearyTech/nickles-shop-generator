@@ -1,0 +1,43 @@
+from django.utils.translation import gettext_lazy as _
+from django.db import models
+
+
+class ItemType(models.TextChoices):
+    # Abbreviations/lookup codes are specified by 5e tools, hence why some are kinda dumb
+    # Also ammo has two for some reason??
+    AMMUNITION = "A", _("Ammunition")
+    AMMO = "AF", _("Ammo")
+    ARTISANS_TOOLS = "AT", _("Artisans Tools")
+    ELDRITCH_MACHINE = "EM", _("Eldritch Machine")
+    EXPLOSIVE = "EXP", _("Explosive")
+    FOOD_AND_DRINK = "FD", _("Food and Drink")
+    ADVENTURING_GEAR = "G", _("Adventuring Gear")
+    GAMING_SET = "GS", _("Gaming Set")
+    HEAVY_ARMOR = "HA", _("Heavy Armor")
+    ILLEGAL_DRUG = "IDG", _("Illegal Drug")
+    INSTRUMENT = "INS", _("Instrument")
+    LARGE_ARMOR = "LA", _("Large Armor")
+    MELEE_WEAPON = "M", _("Melee Weapon")
+    MEDIUM_ARMOR = "MA", _("Medium Armor")
+    MOUNT = "MNT", _("Mount")
+    MASTER_RUNE = "MR", _("Master Rune")
+    GENERIC_VARIANT = "GV", _("Generic Variant")
+    POTION = "P", _("Potion")
+    RANGED_WEAPON = "RW", _("Ranged Weapon")
+    ROD = "R", _("Rod")
+    RG = "RG", _("Ring")
+    SHIELD = "S", _("Shield")
+    SCROLL = "SC", _("Scroll")
+    SPELLCASTING_FOCUS = "SCF", _("Spellcast Focus")
+    OTHER = "OTH", _("Other")
+    TOOL = "T", _("Tool")
+    TACK_AND_HARNESS = "TAH", _("Tack and Harness")
+    TRADE_GOOD = "TG", _("Trade Good")
+    TREASURE = "$", _("Treasure")
+    TREASURE_COINAGE = "$C", _("Treasure Coinage")
+    TREASURE_GEMSTONE = "$G", _("Treasure Gemstone")
+    LAND_VEHICLE = "VEH", _("Land Vehicle")
+    SHIP_VEHICLE = "SHP", _("Ship Vehicle")
+    AIR_VEHICLE = "AIR", _("Air Vehicle")
+    SPACE_VEHICLE = "SPC", _("Space Vehicle")
+    WAND = "WD", _("Wand")

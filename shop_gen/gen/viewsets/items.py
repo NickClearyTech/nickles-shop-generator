@@ -1,7 +1,9 @@
 from rest_framework import mixins, permissions, viewsets
+from rest_framework.filters import SearchFilter
+from django_filters.rest_framework import DjangoFilterBackend
 
 from gen.serializers import ItemSerializer
-from gen.querysets import get_items
+from gen.querysets.item_queries import get_items
 
 
 class ItemViewSet(
@@ -12,3 +14,4 @@ class ItemViewSet(
 
     serializer_class = ItemSerializer
     permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, SearchFilter]

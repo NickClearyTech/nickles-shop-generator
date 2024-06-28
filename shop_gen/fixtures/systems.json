@@ -1,0 +1,18 @@
+[
+  {
+    "model": "gen.system",
+    "pk": 1,
+    "fields": {
+      "abbreviation": "DnD5e",
+      "full_name": "Dungeons and Dragons 5th Edition"
+    }
+  },
+  {
+    "model": "gen.system",
+    "pk": 2,
+    "fields": {
+      "abbreviation": "PF2e",
+      "full_name": "Pathfinder 2nd Edition"
+    }
+  }
+]

@@ -5,7 +5,7 @@ RUN apt update && apt upgrade -y
 WORKDIR /shop_gen
 
 ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONBUFFERED=1
+ENV PYTHONUNBUFFERED 1
 
 # create an unprivledged user
 RUN adduser --disabled-password --gecos '' app

@@ -1,4 +1,6 @@
 from rest_framework import mixins, permissions, viewsets
+from rest_framework.filters import SearchFilter
+from django_filters.rest_framework import DjangoFilterBackend
 
 from gen.serializers import JobSerializer
 from gen.models import Job
@@ -14,3 +16,4 @@ class JobViewSet(
 
     serializer_class = JobSerializer
     permission_classes = [permissions.IsAuthenticated]
+    filter_backends = [DjangoFilterBackend, SearchFilter]

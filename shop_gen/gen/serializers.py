@@ -1,7 +1,8 @@
 from drf_spectacular.utils import extend_schema_field
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from gen.models import System, Item, Spell, Shop, SpellToShop, ItemToShop, Job
+from gen.models import System, Item, Spell, Shop, SpellToShop, ItemToShop, Job, Book
+from gen.consts import ITEM_RARITY_CODES
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -19,6 +20,12 @@ class UserSelfSerializer(serializers.ModelSerializer):
 class SystemSerializer(serializers.ModelSerializer):
     class Meta:
         model = System
+        fields = "__all__"
+
+
+class BookSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Book
         fields = "__all__"
 
 
@@ -63,39 +70,57 @@ class ItemShopSettings(serializers.Serializer):
     allow_duplicates = serializers.BooleanField(default=True)
     rarity = serializers.CharField(min_length=1, max_length=1)
 
+    def validate_rarity(self, value):
+        if value not in ITEM_RARITY_CODES:
+            raise serializers.ValidationError(
+                "Rarity must be one of: {}".format(ITEM_RARITY_CODES)
+            )
+        return value
+
 
 class SpellShopSettings(serializers.Serializer):
     min_number = serializers.IntegerField(min_value=0, max_value=10000)
     max_number = serializers.IntegerField(min_value=0, max_value=10000)
     allow_duplicates = serializers.BooleanField(default=True)
-    level = serializers.IntegerField(min_value=1, max_value=9)
+    level = serializers.IntegerField(min_value=0, max_value=9)
 
 
 class ShopSettingsSerializer(serializers.Serializer):
     name = serializers.CharField(max_length=128, default="My New Shop")
-    items = ItemShopSettings(many=True)
-    spells = SpellShopSettings(many=True)
+    magical_items = ItemShopSettings(many=True, required=False)
+    equipment = ItemShopSettings(many=True, required=False)
+    potions = ItemShopSettings(many=True, required=False)
+    spells = SpellShopSettings(many=True, required=False)
 
-    def validate_items(self, value):
+    def run_item_validation(self, value, field_name: str):
         rarities = ["C", "U", "R", "V", "L"]
-        if len(value) != 5:
+        if len(value) != len(rarities):
             raise serializers.ValidationError(
-                "Invalid number of item settings, should be exactly 5"
+                f"Invalid number of {field_name} settings, should be exactly 5"
             )
         for item_setting in value:
             if item_setting["rarity"].upper() in rarities:
                 rarities.remove(item_setting["rarity"])
             else:
                 raise serializers.ValidationError(
-                    f"Multiple item settings have the same rarity, or invalid rarity specified: {item_setting['rarity']}"
+                    f"Multiple {field_name} settings have the same rarity, or invalid rarity specified: {item_setting['rarity']}"
                 )
         return value
 
+    def validate_magical_items(self, value):
+        return self.run_item_validation(value, "magical_items")
+
+    def validate_equipment(self, value):
+        return self.run_item_validation(value, "equipment")
+
+    def validate_potions(self, value):
+        return self.run_item_validation(value, "potions")
+
     def validate_spells(self, value):
-        levels = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-        if len(value) != 9:
+        levels = list(range(0, 10))
+        if len(value) != len(levels):
             raise serializers.ValidationError(
-                "Invalid number of spell settings, should be exactly 9"
+                "Invalid number of spell settings, should be exactly 10"
             )
         for spell_setting in value:
             if spell_setting["level"] in levels:
@@ -105,6 +130,18 @@ class ShopSettingsSerializer(serializers.Serializer):
                     f"Multiple spell settings have the same level, or an invalid spell level was supplied: {spell_setting['level']}"
                 )
         return value
+
+    def validate(self, data):
+        if (
+            (data["equipment"] is None or len(data["equipment"]) == 0)
+            and (data["magical_items"] is None or len(data["magical_items"]) == 0)
+            and (data["potions"] is None or len(data["potions"]) == 0)
+            and (data["spells"] is None or len(data["spells"]) == 0)
+        ):
+            raise serializers.ValidationError(
+                "At least one type of item or spell must be for sale!"
+            )
+        return data
 
 
 class ShopToItemSerializer(serializers.ModelSerializer):

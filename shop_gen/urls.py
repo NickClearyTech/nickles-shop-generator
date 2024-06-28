@@ -9,6 +9,7 @@ from gen.viewsets.items import ItemViewSet
 from gen.viewsets.spells import SpellViewSet
 from gen.viewsets.shops import ShopViewSet
 from gen.viewsets.jobs import JobViewSet
+from gen.viewsets.books import BookViewSet
 
 from gen.views.shop import shop_detail
 
@@ -19,6 +20,7 @@ router.register(r"item", ItemViewSet, basename="item")
 router.register(r"spell", SpellViewSet, basename="spell")
 router.register(r"shop", ShopViewSet, basename="shop")
 router.register(r"job", JobViewSet, basename="job")
+router.register(r"book", BookViewSet, basename="book")
 
 
 urlpatterns = [
@@ -30,5 +32,5 @@ urlpatterns = [
         SpectacularSwaggerView.as_view(url_name="schema"),
         name="swagger-ui",
     ),
-    path('shop/<id>', shop_detail, name='shop_detail')
+    path("shop/<id>", shop_detail, name="shop_detail"),
 ]

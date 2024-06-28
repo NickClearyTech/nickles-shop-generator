@@ -3,6 +3,8 @@ from rest_framework import mixins, status
 from rest_framework import permissions, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.filters import SearchFilter
+from django_filters.rest_framework import DjangoFilterBackend
 
 from gen.serializers import UserSerializer, UserSelfSerializer
 
@@ -25,6 +27,7 @@ class UserViewSet(
         return UserSerializer
 
     permission_classes = [permissions.IsAdminUser]
+    filter_backends = [DjangoFilterBackend, SearchFilter]
 
     @action(
         detail=False,
