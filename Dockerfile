@@ -1,4 +1,4 @@
-FROM harbor.nicleary.com/dockerhub/python:3.11.2
+FROM python:3.11.2
 
 RUN apt update && apt upgrade -y
 
