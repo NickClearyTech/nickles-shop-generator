@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/generator/generate_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/generator/generate_shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/querysets/item_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/querysets/item_queries.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/views/shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/views/shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/tests/gen/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/tests/gen/test_models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/tests/gen/test_serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/tests/gen/test_serializers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +154,7 @@
       <workItem from="1716995647862" duration="14137000" />
       <workItem from="1717462527491" duration="698000" />
       <workItem from="1717467015897" duration="3450000" />
-      <workItem from="1718511539166" duration="32178000" />
+      <workItem from="1718511539166" duration="32407000" />
     </task>
     <servers />
   </component>
