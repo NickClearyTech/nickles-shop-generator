@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/action.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/action.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/semgrep.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +156,7 @@
       <workItem from="1716995647862" duration="14137000" />
       <workItem from="1717462527491" duration="698000" />
       <workItem from="1717467015897" duration="3450000" />
-      <workItem from="1718511539166" duration="33494000" />
+      <workItem from="1718511539166" duration="34340000" />
     </task>
     <servers />
   </component>
