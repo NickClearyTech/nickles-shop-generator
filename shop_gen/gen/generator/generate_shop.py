@@ -3,7 +3,12 @@ from typing import Callable, List
 
 from gen.serializers import ShopSettingsSerializer
 from gen.models import Shop, ShopWarning, ItemToShop, Item, SpellToShop, Spell
-from gen.querysets.item_queries import get_potions, get_equipment, get_magic_items, get_spells_by_level
+from gen.querysets.item_queries import (
+    get_potions,
+    get_equipment,
+    get_magic_items,
+    get_spells_by_level,
+)
 
 from logging import getLogger
 
@@ -82,10 +87,10 @@ def generate_shop_spells(shop_object: Shop, shop_settings):
     shop_to_spell_list: List[SpellToShop] = []
 
     for level in range(0, 10):
-        logger.info(
-            f"Generating spells for level {level} for shop #{shop_object.id}"
+        logger.info(f"Generating spells for level {level} for shop #{shop_object.id}")
+        level_settings = get_settings_by_rarity(
+            shop_settings["spells"], level, is_spell=True
         )
-        level_settings = get_settings_by_rarity(shop_settings["spells"], level, is_spell=True)
         if level_settings["min_number"] == 0 and level_settings["max_number"] == 0:
             # If none of this level are required, continue
             continue

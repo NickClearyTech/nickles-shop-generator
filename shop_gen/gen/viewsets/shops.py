@@ -36,7 +36,9 @@ class ShopViewSet(
 
         return Response(status=status.HTTP_200_OK)
 
-    @action(detail=False, methods=["POST"], name="CreateShopAsync", url_path="create_async")
+    @action(
+        detail=False, methods=["POST"], name="CreateShopAsync", url_path="create_async"
+    )
     def create_async(self, request, **kwargs):
         serialized: ShopSettingsSerializer = ShopSettingsSerializer(
             data=request.data, context={"request": self.request}

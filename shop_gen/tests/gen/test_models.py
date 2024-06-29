@@ -2,7 +2,7 @@ import pytest
 from django.core.exceptions import ValidationError
 from django.contrib.auth.models import User
 
-from gen.models import System, Item, Spell
+from gen.models import System, Item, Spell, Book
 
 
 @pytest.mark.django_db
@@ -13,7 +13,7 @@ def test_min_item_price():
             "description": "A test desc",
             "price": -1,
             "public": True,
-            "sourcebook": "Ravenloft",
+            "sourcebook": Book.objects.get(id=2),
             "magical": True,
             "rarity": "C",
         }
@@ -32,7 +32,7 @@ def test_min_spell_level():
             "description": "A test desc",
             "price": 50,
             "public": True,
-            "sourcebook": "Ravenloft",
+            "sourcebook": Book.objects.get(id=2),
             "level": -1,
         }
     )
@@ -54,7 +54,7 @@ def test_max_spell_level():
             "description": "A test desc",
             "price": 50,
             "public": True,
-            "sourcebook": "Ravenloft",
+            "sourcebook": Book.objects.get(id=2),
             "level": 10,
         }
     )

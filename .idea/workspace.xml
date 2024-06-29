@@ -5,34 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/nickles-shop-generator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/nickles-shop-generator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/fixtures_items.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/fixtures_spells.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generate_fixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate_fixtures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/fixtures.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/querysets.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/tasks/generate_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/tasks/generate_shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/templates/single_shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/templates/single_shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/generator/generate_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/generator/generate_shop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/querysets/item_queries.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/querysets/item_queries.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/gen/views/shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/views/shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/jobs.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/jobs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/spells.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/spells.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/systems.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/systems.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/users.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/scripts/initializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/scripts/initializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/test-requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/test-requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/tests/gen/test_models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/tests/gen/test_models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop_gen/tests/gen/test_serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/tests/gen/test_serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +161,7 @@
       <workItem from="1716995647862" duration="14137000" />
       <workItem from="1717462527491" duration="698000" />
       <workItem from="1717467015897" duration="3450000" />
-      <workItem from="1718511539166" duration="27640000" />
+      <workItem from="1718511539166" duration="32178000" />
     </task>
     <servers />
   </component>
