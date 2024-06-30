@@ -32,9 +32,9 @@ class ShopViewSet(
         )
         serialized.is_valid(raise_exception=True)
 
-        generate_shop(serialized)
+        shop_object = generate_shop(serialized)
 
-        return Response(status=status.HTTP_200_OK)
+        return Response(status=status.HTTP_200_OK, data=ShopSerializer(shop_object).data)
 
     @action(
         detail=False, methods=["POST"], name="CreateShopAsync", url_path="create_async"

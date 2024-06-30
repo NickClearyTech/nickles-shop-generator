@@ -23,7 +23,7 @@ def shop_detail(request, id):
         .all()
     )
 
-    items_dict = {"equipment": [], "magic_items": [], "potions": [], "spells": []}
+    items_dict = {"equipment": [], "magic_items": [], "potions": []}
 
     for item in item_to_shops:
         # Potions
@@ -57,5 +57,5 @@ def shop_detail(request, id):
     return TemplateResponse(
         request,
         "single_shop.html",
-        {"shop": shop, "items": items_dict, "spells": spells},
+        {"shop": shop, "item_objects": items_dict, "spells": spells},
     )

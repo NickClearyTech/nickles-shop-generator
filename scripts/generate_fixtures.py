@@ -31,6 +31,32 @@ def process_multiple_value_links(entry: str) -> str:
     return result_string
 
 
+def get_spell_cost_by_level(level: int):
+    match level:
+        case None:
+            return 0
+        case 0:
+            return 1500
+        case 1:
+            return 2500
+        case 2:
+            return 15000
+        case 3:
+            return 40000
+        case 4:
+            return 80000
+        case 5:
+            return 150000
+        case 6:
+            return 200000
+        case 7:
+            return 350000
+        case 8:
+            return 500000
+        case 9:
+            return 2000000
+
+
 def process_entry_string(entry: str) -> str:
     return process_multiple_value_links(process_single_value_links(entry))
 
@@ -174,37 +200,47 @@ with open("../shop_gen/fixtures/items.json", "w") as outfile:
 
 print("Processed items")
 
-# all_spells = []
-# current_pk = 1
-#
-# with open("spells.json") as fh:
-#     data = json.load(fh)
-#
-# for spell in data["spells"]:
-#     all_spells.append(
-#         {
-#             "model": "gen.spell",
-#             "pk": current_pk,
-#             "fields": {
-#                 "name": spell["name"],
-#                 "description": (
-#                     get_desc_from_entries(spell["entries"])
-#                     if "entries" in spell.keys()
-#                     else ""
-#                 ),
-#                 "system": 1,
-#                 "public": True,
-#                 "price": 0,
-#                 "level": spell["level"] if "level" in spell.keys() else None,
-#                 "owner": 1,
-#             },
-#         }
-#     )
-#     current_pk += 1
-#
-# # Serializing json
-# json_object = json.dumps(all_spells, indent=4)
-#
-# # Writing to fixtures.json
-# with open("fixtures_spells.json", "w") as outfile:
-#     outfile.write(json_object)
+all_spells = []
+current_pk = 1
+
+with open("spells.json") as fh:
+    data = json.load(fh)
+
+for spell in data["spells"]:
+
+    level = spell["level"] if "level" in spell.keys() else None
+
+    all_spells.append(
+        {
+            "model": "gen.spell",
+            "pk": current_pk,
+            "fields": {
+                "name": spell["name"],
+                "description": (
+                    get_desc_from_entries(spell["entries"])
+                    if "entries" in spell.keys()
+                    else ""
+                ),
+                "sourcebook": (
+                    internal_books[spell["source"]]
+                    if spell["source"] in internal_books.keys()
+                    else None
+                ),
+                "system": 1,
+                "public": True,
+                "price": get_spell_cost_by_level(level),
+                "level": level,
+                "owner": 1,
+            },
+        }
+    )
+    current_pk += 1
+
+# Serializing json
+json_object = json.dumps(all_spells, indent=4)
+
+# Writing to fixtures.json
+with open("../shop_gen/fixtures/spells.json", "w") as outfile:
+    outfile.write(json_object)
+
+print("Processed spells")
