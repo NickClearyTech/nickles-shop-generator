@@ -16,8 +16,8 @@ resource "digitalocean_loadbalancer" "shopgen" {
       entry_port = 443
       entry_protocol = "https"
 
-      target_port = 8080
-      target_protocol = "http"
+      target_port = 443
+      target_protocol = "https"
 
       certificate_name = digitalocean_certificate.shopgen-cert.name
     }

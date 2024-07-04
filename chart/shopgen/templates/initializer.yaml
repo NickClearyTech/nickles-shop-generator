@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: "{{ .Release.Name }}"
+  name: "{{ .Release.Name }}-initializer"
   labels:
     app.kubernetes.io/managed-by: {{ .Release.Service | quote }}
     app.kubernetes.io/instance: {{ .Release.Name | quote }}
@@ -23,7 +23,10 @@ spec:
       containers:
       - name: initializer
         image: "{{ .Values.image.repository}}:{{ .Values.image.tag }}"
-        command: ["/bin/sleep","{{ default "10" .Values.sleepyTime }}"]
+        command:
+          - "bash"
+          - "-c"
+          - "python3 manage.py migrate && python3 manage.py runscript initializer"
         env:
           - name: POSTGRES_USER
             valueFrom:
@@ -35,7 +38,7 @@ spec:
               secretKeyRef:
                 name: db-credentials
                 key: password
-          - name: POSTGRES_HOST
+          - name: POSTGRES_SERVER
             valueFrom:
               secretKeyRef:
                 name: db-credentials

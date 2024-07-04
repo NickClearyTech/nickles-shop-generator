@@ -33,4 +33,6 @@ urlpatterns = [
         name="swagger-ui",
     ),
     path("shop/<id>", shop_detail, name="shop_detail"),
+    # Healthcheck
+    path(r"ht/", include("health_check.urls")),
 ]

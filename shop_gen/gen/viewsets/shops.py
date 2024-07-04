@@ -34,7 +34,9 @@ class ShopViewSet(
 
         shop_object = generate_shop(serialized)
 
-        return Response(status=status.HTTP_200_OK, data=ShopSerializer(shop_object).data)
+        return Response(
+            status=status.HTTP_200_OK, data=ShopSerializer(shop_object).data
+        )
 
     @action(
         detail=False, methods=["POST"], name="CreateShopAsync", url_path="create_async"

@@ -20,10 +20,10 @@ resource "digitalocean_database_firewall" "shopgen_database_access" {
         value = digitalocean_kubernetes_cluster.shopgen-cluster.id
     }
 
-    rule {
-        type = "droplet"
-        value = digitalocean_droplet.bastion.id
-    }
+    # rule {
+    #     type = "droplet"
+    #     value = digitalocean_droplet.bastion.id
+    # }
 }       
 
 # Create shopgen production database

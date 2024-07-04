@@ -31,11 +31,11 @@ Create chart name and version as used by the chart label.
 {{- end }}
 
 {{/*
-Common labels
+Common webserver labels
 */}}
-{{- define "shopgen.labels" -}}
+{{- define "shopgen.common-labels" -}}
 helm.sh/chart: {{ include "shopgen.chart" . }}
-{{ include "shopgen.selectorLabels" . }}
+{{ include "shopgen.common-selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -43,10 +43,30 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end }}
 
 {{/*
-Selector labels
+Selector webserver labels
 */}}
-{{- define "shopgen.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "shopgen.name" . }}
+{{- define "shopgen.common-selectorLabels" -}}
+app.kubernetes.io/name: {{ include "shopgen.name" . }}-webserver
+app.kubernetes.io/instance: {{ .Release.Name }}
+{{- end }}
+
+{{/*
+Workers labels
+*/}}
+{{- define "shopgen.worker-labels" -}}
+helm.sh/chart: {{ include "shopgen.chart" . }}
+{{ include "shopgen.worker-selectorLabels" . }}
+{{- if .Chart.AppVersion }}
+app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
+{{- end }}
+app.kubernetes.io/managed-by: {{ .Release.Service }}
+{{- end }}
+
+{{/*
+Selector workers labels
+*/}}
+{{- define "shopgen.worker-selectorLabels" -}}
+app.kubernetes.io/name: {{ include "shopgen.name" . }}-worker
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 

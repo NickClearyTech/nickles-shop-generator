@@ -4,11 +4,6 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -36,6 +31,7 @@ INSTALLED_APPS = [
     "django_extensions",
     "django_celery_results",
     "django_tables2",
+    "health_check",
 ]
 
 MIDDLEWARE = [
@@ -161,7 +157,6 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "0.0.1",
     "COMPONENT_SPLIT_REQUEST": True,
     "SCHEMA_PATH_PREFIX": "/api/v1",
-    # "SCHEMA_PATH_PREFIX_TRIM": True
 }
 
 DEFAULT_ADMIN_EMAIL = os.environ.get("DEFAULT_ADMIN_EMAIL", "nick@nick.com")
@@ -170,7 +165,7 @@ DEFAULT_ADMIN_PASSWORD = os.environ.get("DEFAULT_ADMIN_PASSWORD", "defaultP@ss")
 
 # Celery Settings
 CELERY_TASK_TRACK_STARTED = True
-BROKER_URL = "redis://default:bigpass12345@redis:6379//"
+BROKER_URL = f"redis://default:{os.environ.get('REDIS_PASSWORD')}@{os.environ.get('REDIS_HOST')}:{os.environ.get('REDIS_PORT')}//"
 CELERY_RESULT_BACKEND = "django-db"
 CELERY_ACCEPT_CONTENT = ["application/json"]
 CELERY_TASK_SERIALIZER = "json"
