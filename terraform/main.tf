@@ -22,13 +22,3 @@ resource "digitalocean_kubernetes_cluster" "shopgen-cluster" {
     size = "s-2vcpu-4gb"
   }
 }
-
-# VPC Bastion Droplet
-# resource "digitalocean_droplet" "bastion" {
-#     image = "ubuntu-24-04-x64"
-#     name = "shopgen-bastion"
-#     region = "nyc3"
-#     size = "s-1vcpu-1gb"
-#     monitoring = true
-#     ssh_keys = [data.digitalocean_ssh_key.primary-key.id]
-# }

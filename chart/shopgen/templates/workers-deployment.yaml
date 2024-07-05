@@ -6,7 +6,7 @@ metadata:
     {{- include "shopgen.worker-labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.workerReplicaCount }}
   {{- end }}
   selector:
     matchLabels:
@@ -86,7 +86,7 @@ spec:
             - name: REDIS_PORT
               value: "6379"
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            {{- toYaml .Values.workersResources | nindent 12 }}
           {{- with .Values.volumeMounts }}
           volumeMounts:
             {{- toYaml . | nindent 12 }}

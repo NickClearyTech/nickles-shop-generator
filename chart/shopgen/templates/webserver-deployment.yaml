@@ -6,7 +6,7 @@ metadata:
     {{- include "shopgen.common-labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.webserverReplicaCount }}
   {{- end }}
   selector:
     matchLabels:
@@ -76,6 +76,21 @@ spec:
                 secretKeyRef:
                   name: django-config
                   key: environment
+            - name: DEFAULT_ADMIN_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: django-config
+                  key: default_admin_email
+            - name: DEFAULT_ADMIN_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: django-config
+                  key: default_admin_username
+            - name: DEFAULT_ADMIN_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: django-config
+                  key: default_admin_password
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
@@ -85,7 +100,7 @@ spec:
           readinessProbe:
             {{- toYaml .Values.readinessProbe | nindent 12 }}
           resources:
-            {{- toYaml .Values.resources | nindent 12 }}
+            {{- toYaml .Values.webserverResources | nindent 12 }}
           {{- with .Values.volumeMounts }}
           volumeMounts:
             {{- toYaml . | nindent 12 }}

@@ -20,14 +20,14 @@ resource "digitalocean_database_firewall" "shopgen_database_access" {
         value = digitalocean_kubernetes_cluster.shopgen-cluster.id
     }
 
-    # rule {
-    #     type = "droplet"
-    #     value = digitalocean_droplet.bastion.id
-    # }
+    rule {
+        type = "ip_addr"
+        value = "${chomp(data.http.myip.response_body)}"
+    }
 }       
 
 # Create shopgen production database
-resource "digitalocean_database_db" "shopgen-production" {
-    cluster_id = digitalocean_database_cluster.production-postgres.id
-    name = "shopgen"
-}
+# resource "digitalocean_database_db" "shopgen-production" {
+#     cluster_id = digitalocean_database_cluster.production-postgres.id
+#     name = "shopgen"
+# }

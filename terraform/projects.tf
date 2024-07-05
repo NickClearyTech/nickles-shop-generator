@@ -10,8 +10,7 @@ resource "digitalocean_project_resources" "shopgen-production-resources" {
     resources = [
         digitalocean_database_cluster.production-postgres.urn,
         digitalocean_kubernetes_cluster.shopgen-cluster.urn,
-        # digitalocean_droplet.bastion.urn,
-        digitalocean_loadbalancer.shopgen.urn,
+        data.digitalocean_loadbalancer.shopgen-production.urn,
         digitalocean_domain.nicklesshopgen.urn,
     ]
   
