@@ -8,9 +8,8 @@ def process_single_value_links(entry: str) -> str:
 
     results = re.findall(regex_string, entry)
     for result in results:
-        # Skip any result with | in it, process later
         if "|" in result[1]:
-            continue
+            result_string = result[1].split("|")[0]
         result_string = result_string.replace(
             f"{{@{result[0]} {result[1]}}}", result[1]
         )
@@ -71,6 +70,48 @@ def get_desc_from_entries(entries: dict) -> str:
             description += f"{process_entry_string(entry)}\n"
     return description
 
+
+def get_col_indices_for_name_and_price(column_labels):
+    name_column = (
+        1  # For now, this seems to just work as the name is always the second column
+    )
+    cost_column = None
+
+    for index, column_label in enumerate(column_labels):
+        if column_label == "SUGGESTED COST":
+            cost_column = index
+
+    if cost_column is None or name_column is None:
+        print("Failed to determine name and cost columns in discerning merchants guide")
+        exit(1)
+    return name_column, cost_column
+
+
+def get_item_price_by_name(name: str) -> int:
+    return item_costs.get(name, 0)
+
+
+item_costs = {}
+
+with open("discerning-merchant-guide.json", "r") as fh:
+    data = json.load(fh)
+
+tables = data["table"]
+
+for table in tables:
+    name_column, cost_column = get_col_indices_for_name_and_price(table["colLabels"])
+    # Iterate over each row in the table
+    for row in table["rows"]:
+        item_name = process_single_value_links(row[name_column])
+        try:
+            item_cost = (
+                int(row[cost_column].split(" ")[0].replace(",", "")) * 100
+            )  # Get cost, split at space, multiply by 100 for converting to number of copper
+            item_costs[item_name] = item_cost
+        except IndexError:
+            print(f"Unable to get cost for {table['name']}")
+        except ValueError:
+            print(f"Unable to get cost for {table['name']}: invalid cost entry")
 
 internal_books = {}
 
@@ -156,6 +197,8 @@ types = set()
 for item in data["item"]:
 
     item_price = item["value"] if "value" in item.keys() else 0
+    if item_price == 0:
+        item_price = get_item_price_by_name(item["name"])
 
     all_items.append(
         {

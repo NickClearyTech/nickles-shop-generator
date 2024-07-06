@@ -53,3 +53,28 @@ spec:
               secretKeyRef:
                 name: db-credentials
                 key: port
+          - name: DJANGO_SECRET_KEY
+            valueFrom:
+              secretKeyRef:
+                name: django-config
+                key: secret-key
+          - name: DJANGO_ENV
+            valueFrom:
+              secretKeyRef:
+                name: django-config
+                key: environment
+          - name: DEFAULT_ADMIN_EMAIL
+            valueFrom:
+              secretKeyRef:
+                name: django-config
+                key: default_admin_email
+          - name: DEFAULT_ADMIN_USERNAME
+            valueFrom:
+              secretKeyRef:
+                name: django-config
+                key: default_admin_username
+          - name: DEFAULT_ADMIN_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: django-config
+                key: default_admin_password

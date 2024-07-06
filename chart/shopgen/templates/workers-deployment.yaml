@@ -6,7 +6,7 @@ metadata:
     {{- include "shopgen.worker-labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
-  replicas: {{ .Values.workerReplicaCount }}
+  replicas: {{ .Values.workersReplicaCount }}
   {{- end }}
   selector:
     matchLabels:

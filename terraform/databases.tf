@@ -27,7 +27,7 @@ resource "digitalocean_database_firewall" "shopgen_database_access" {
 }       
 
 # Create shopgen production database
-# resource "digitalocean_database_db" "shopgen-production" {
-#     cluster_id = digitalocean_database_cluster.production-postgres.id
-#     name = "shopgen"
-# }
+resource "digitalocean_database_db" "shopgen-production" {
+    cluster_id = digitalocean_database_cluster.production-postgres.id
+    name = "shopgen"
+}
