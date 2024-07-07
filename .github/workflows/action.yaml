@@ -113,12 +113,12 @@ jobs:
         uses: github/codeql-action/analyze@v2
   
   deploy:
-    # needs: 
-    #   - build
-    #   - test
-    #   - trivy
-    #   - semgrep
-    #   - codeql
+    needs: 
+      - build
+      - test
+      - trivy
+      - semgrep
+      - codeql
     name: Deploy
     runs-on: ubuntu-22.04
     container: alpine/helm:3.15.2
@@ -137,4 +137,4 @@ jobs:
       - name: Run helm build
         run: helm dependency build ./chart/shopgen
       - name: Run helm deploy
-        run: helm upgrade -i shopgen ./chart/shopgen -n shopgen-production --create-namespace --values ./chart/shopgen/values.yaml --set image.tag=66
+        run: helm upgrade -i shopgen ./chart/shopgen -n shopgen-production --create-namespace --values ./chart/shopgen/values.yaml --set image.tag=${{ github.run_number }}
