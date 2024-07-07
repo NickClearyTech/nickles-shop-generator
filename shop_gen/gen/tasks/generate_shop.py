@@ -3,7 +3,7 @@ from rest_framework.exceptions import ValidationError
 
 from celery_settings import app as celery_app
 
-from gen.models import Job, Shop, ItemToShop, Item, ShopWarning, SpellToShop, Spell
+from gen.models import Job
 from gen.generator.generate_shop import generate_shop
 from gen.serializers import ShopSettingsSerializer
 

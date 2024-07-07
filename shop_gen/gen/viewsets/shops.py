@@ -5,8 +5,8 @@ from rest_framework import mixins, permissions, viewsets, status
 from rest_framework.filters import SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
 
-from gen.serializers import ShopSerializer, ShopSettingsSerializer, JobSerializer
-from gen.models import Shop, Job, ItemToShop, SpellToShop
+from gen.serializers import ShopSerializer, ShopSettingsSerializer
+from gen.models import Shop, Job, ItemToShop
 from gen.generator.generate_shop import generate_shop
 from gen.tasks.generate_shop import generate_shop_task
 

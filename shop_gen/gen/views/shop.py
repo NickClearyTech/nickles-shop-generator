@@ -1,6 +1,6 @@
 from django.template.response import TemplateResponse
 
-from gen.models import Shop, Item, ItemToShop, SpellToShop
+from gen.models import Shop, ItemToShop, SpellToShop
 from gen.lookups import ItemType
 
 import logging
