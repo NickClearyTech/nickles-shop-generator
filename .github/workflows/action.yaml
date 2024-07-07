@@ -120,7 +120,7 @@ jobs:
     #   - semgrep
     #   - codeql
     name: Deploy
-    runs-on: nicleary-ubuntu-k8s # Run on self hosted runners to secure cluster
+    runs-on: ubuntu-22.04
     container: alpine/helm:3.15.2
     environment: 
       name: Production
