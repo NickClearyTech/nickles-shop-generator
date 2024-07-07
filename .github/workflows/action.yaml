@@ -107,3 +107,24 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
+  
+  deploy:
+    needs: 
+      - build
+      - test
+      - trivy
+      - semgrep
+      - codeql
+    name: Deploy
+    runs-on: ubuntu-22.04
+    container: dtzar/helm-kubectl:3.12.0
+    environment: production
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Run kubectl
+        run: |
+          echo ${{ secrets.SHOPGEN_PRODUCTION_KUBECONFIG }} | base64 -d > kube.config
+          kubectl --kubeconfig kube.config config get-contexts
+          helm dependency build ./chart/shopgen
+          helm upgrade -i shopgen . -n shopgen-production --create-namespace --values values.yaml --set image.tag=${{ github.run_number }}

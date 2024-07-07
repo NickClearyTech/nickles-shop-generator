@@ -4,7 +4,6 @@ workersReplicaCount: 2
 image:
   repository: nicklesbread/shop_gen
   pullPolicy: IfNotPresent
-  tag: "53"
 
 imagePullSecrets: []
 nameOverride: ""
@@ -81,6 +80,9 @@ affinity: {}
 loadbalancer:
   enabled: true
   hostname: "nicklesshopgen.com"
+  name: "shopgen-balancer-1"
+  certificate_id: "e3f652aa-7fb2-46d7-aa2c-a1612e850bb5"
+
 
 
 # Redis settings

@@ -6,13 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chart/shopgen/templates/initializer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chart/shopgen/templates/initializer.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chart/shopgen/templates/loadbalancer.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chart/shopgen/templates/loadbalancer.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chart/shopgen/templates/workers-deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chart/shopgen/templates/workers-deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/generate_fixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/generate_fixtures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/fixtures/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/fixtures/items.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop_gen/fixtures/spells.json" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/fixtures/spells.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/terraform/databases.tf" beforeDir="false" afterPath="$PROJECT_DIR$/terraform/databases.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chart/shopgen/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/chart/shopgen/values.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +160,7 @@
       <workItem from="1716995647862" duration="14137000" />
       <workItem from="1717462527491" duration="698000" />
       <workItem from="1717467015897" duration="3450000" />
-      <workItem from="1718511539166" duration="70654000" />
+      <workItem from="1718511539166" duration="71574000" />
     </task>
     <servers />
   </component>

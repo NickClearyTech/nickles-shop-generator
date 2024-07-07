@@ -7,11 +7,11 @@ metadata:
   labels:
     {{- include "shopgen.common-labels" . | nindent 4 }}
   annotations:
-    kubernetes.digitalocean.com/do-loadbalancer-name: "shopgen-balancer-1"
+    kubernetes.digitalocean.com/do-loadbalancer-name: {{ .Values.loadbalancer.name }}
     service.beta.kubernetes.io/do-loadbalancer-size-unit: "1"
     service.beta.kubernetes.io/do-loadbalancer-protocol: "https"
     service.beta.kubernetes.io/do-loadbalancer-disable-lets-encrypt-dns-records: "false"
-    service.beta.kubernetes.io/do-loadbalancer-certificate-id: "e3f652aa-7fb2-46d7-aa2c-a1612e850bb5"
+    service.beta.kubernetes.io/do-loadbalancer-certificate-id: {{ .Values.loadbalancer.certificate_id }}
     service.beta.kubernetes.io/do-loadbalancer-hostname: {{ .Values.loadbalancer.hostname }}
 spec:
   type: LoadBalancer
