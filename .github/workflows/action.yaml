@@ -137,4 +137,4 @@ jobs:
       - name: Run helm build
         run: helm dependency build ./chart/shopgen
       - name: Run helm deploy
-        run: helm upgrade -i shopgen ./chart/shopgen -n shopgen-production --create-namespace --values values.yaml --set image.tag=66
+        run: helm upgrade -i shopgen ./chart/shopgen -n shopgen-production --create-namespace --values ./chart/shopgen/values.yaml --set image.tag=66
