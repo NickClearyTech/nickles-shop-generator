@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     # Runs pytest and black formatting tool
-    runs-on: nicleary-ubuntuk8s
+    runs-on: nicleary-ubuntu-k8s
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,7 +21,7 @@ jobs:
         run: docker run --name pytest shop_gen_test:${{ github.run_number }}
 
   build:
-    runs-on: nicleary-ubuntuk8s
+    runs-on: nicleary-ubuntu-k8s
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,7 +41,7 @@ jobs:
 
   trivy:
     needs: build
-    runs-on: nicleary-ubuntuk8s
+    runs-on: nicleary-ubuntu-k8s
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -61,7 +61,7 @@ jobs:
 
   semgrep:
     name: Semgrep
-    runs-on: nicleary-ubuntuk8s
+    runs-on: nicleary-ubuntu-k8s
     needs: build
     env:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
@@ -80,7 +80,7 @@ jobs:
   codeql:
     needs: build
     name: Analyze
-    runs-on: nicleary-ubuntuk8s
+    runs-on: nicleary-ubuntu-k8s
     permissions:
       actions: read
       contents: read
@@ -116,7 +116,7 @@ jobs:
       - semgrep
       - codeql
     name: Deploy
-    runs-on: nicleary-ubuntuk8s
+    runs-on: nicleary-ubuntu-k8s
     container: dtzar/helm-kubectl:3.12.0
     environment: 
       name: Production
