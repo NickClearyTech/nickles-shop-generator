@@ -128,10 +128,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+      - name: Save DigitalOcean kubeconfig with short-lived credentials
+        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ vars.CLUSTER_NAME }}
       - name: Run kubectl
         run: |
-          echo ${{ secrets.SHOPGEN_PRODUCTION_KUBECONFIG }} | base64 -d > kube.config
-          kubectl --kubeconfig kube.config config get-contexts
-          kubectl get pods --all-namespaces
           helm dependency build ./chart/shopgen
           helm upgrade -i shopgen . -n shopgen-production --create-namespace --values values.yaml --set image.tag=${{ github.run_number }}
