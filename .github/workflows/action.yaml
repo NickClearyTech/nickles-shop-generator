@@ -118,7 +118,9 @@ jobs:
     name: Deploy
     runs-on: ubuntu-22.04
     container: dtzar/helm-kubectl:3.12.0
-    environment: Production
+    environment: 
+      name: Production
+      url: https://nicklesshopgen.com
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -126,6 +128,6 @@ jobs:
         run: |
           echo ${{ secrets.SHOPGEN_PRODUCTION_KUBECONFIG }} | base64 -d > kube.config
           kubectl --kubeconfig kube.config config get-contexts
-          kubectl config use-context do-nyc3-shopgen-cluster
+          kubectl get pods --all-namespaces
           helm dependency build ./chart/shopgen
           helm upgrade -i shopgen . -n shopgen-production --create-namespace --values values.yaml --set image.tag=${{ github.run_number }}
