@@ -132,5 +132,7 @@ jobs:
         run: |
           echo ${{ secrets.SHOPGEN_PRODUCTION_KUBECONFIG }} | base64 -d > kube.config
           kubectl --kubeconfig kube.config config get-contexts
+          kubectl config use-context do-nyc3-shopgen-cluster
+          kubectl get pods --all-namespaces
           helm dependency build ./chart/shopgen
           helm upgrade -i shopgen . -n shopgen-production --create-namespace --values values.yaml --set image.tag=${{ github.run_number }}
