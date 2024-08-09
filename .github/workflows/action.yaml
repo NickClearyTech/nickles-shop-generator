@@ -85,7 +85,7 @@ jobs:
   codeql:
     needs: build
     name: Analyze
-    runs-on: nicleary-ubuntu-k8s
+    runs-on: ubuntu-22.04
     permissions:
       actions: read
       contents: read
