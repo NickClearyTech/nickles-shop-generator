@@ -18,7 +18,15 @@ resource "digitalocean_kubernetes_cluster" "shopgen-cluster" {
 
   node_pool {
     name = "default-nodepool"
-    node_count = 2
+    node_count = 1
     size = "s-2vcpu-4gb"
   }
+}
+
+resource "digitalocean_kubernetes_node_pool" "extra-node" {
+  cluster_id = digitalocean_kubernetes_cluster.shopgen-cluster.id
+
+  name       = "extra-node"
+  size       = "s-1vcpu-2gb"
+  node_count = 1
 }

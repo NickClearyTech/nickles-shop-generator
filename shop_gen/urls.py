@@ -12,6 +12,7 @@ from gen.viewsets.jobs import JobViewSet
 from gen.viewsets.books import BookViewSet
 
 from gen.views.shop import shop_detail
+from gen.views.generate_shop import generate_shop
 
 router = routers.SimpleRouter()
 router.register(r"user", UserViewSet, basename="user")
@@ -33,6 +34,7 @@ urlpatterns = [
         name="swagger-ui",
     ),
     path("shop/<id>", shop_detail, name="shop_detail"),
+    path("generate/shop", generate_shop, name="generate_shop"),
     # Healthcheck
     path(r"ht/", include("health_check.urls")),
 ]

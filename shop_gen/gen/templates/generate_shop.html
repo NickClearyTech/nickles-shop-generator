@@ -1,0 +1,11 @@
+{%  extends "base.html" %}
+
+{% block content %}
+  <form action="/generate/shop" method="post">
+      {% csrf_token %}
+      <label for="name">Shop name:</label>
+      <input id="name" type="text" name="name" value="{{ name }}">
+      <input type="submit" value="OK">
+  </form>
+{#  {{ form }}#}
+{% endblock %}

@@ -78,10 +78,14 @@ tolerations: []
 affinity: {}
 
 loadbalancer:
-  enabled: true
+  enabled: false
   hostname: "nicklesshopgen.com"
   name: "shopgen-balancer-1"
   certificate_id: "e3f652aa-7fb2-46d7-aa2c-a1612e850bb5"
+
+ingress:
+  enabled: true
+  host: "shopgen.nicleary.com"
 
 
 

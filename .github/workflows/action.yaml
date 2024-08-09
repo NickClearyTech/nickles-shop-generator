@@ -9,7 +9,7 @@ on:
 jobs:
   test:
     # Runs pytest and black formatting tool
-    runs-on: ubuntu-22.04
+    runs-on: nicleary-ubuntu-k8s
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,7 +21,7 @@ jobs:
         run: docker run --name pytest shop_gen_test:${{ github.run_number }}
 
   build:
-    runs-on: ubuntu-22.04
+    runs-on: nicleary-ubuntu-k8s
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,19 +33,20 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{ secrets.HARBOR_USERNAME }}
+          password: ${{ secrets.HARBOR_PASSWORD }}
+          registry: harbor.nicleary.com
 
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: nicklesbread/shop_gen:${{ github.run_number }}
+          tags: harbor.nicleary.com/library/shop_gen:${{ github.run_number }}
           file: Dockerfile
 
   trivy:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: nicleary-ubuntu-k8s
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -65,7 +66,7 @@ jobs:
 
   semgrep:
     name: Semgrep
-    runs-on: ubuntu-22.04
+    runs-on: nicleary-ubuntu-k8s
     needs: build
     env:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
@@ -84,7 +85,7 @@ jobs:
   codeql:
     needs: build
     name: Analyze
-    runs-on: ubuntu-22.04
+    runs-on: nicleary-ubuntu-k8s
     permissions:
       actions: read
       contents: read
@@ -120,21 +121,18 @@ jobs:
       - semgrep
       - codeql
     name: Deploy
-    runs-on: ubuntu-22.04
-    container: alpine/helm:3.15.2
+    runs-on: nicleary-ubuntu-k8s
+    container: harbor.nicleary.com/dockerhub/dtzar/helm-kubectl:3.12.0
     environment: 
       name: Production
-      url: https://nicklesshopgen.com
+      url: https://shopgen.nicleary.com
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      - name: Install doctl
-        uses: digitalocean/action-doctl@v2
-        with:
-          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
-      - name: Save DigitalOcean kubeconfig with short-lived credentials
-        run: doctl kubernetes cluster kubeconfig save --expiry-seconds 600 ${{ vars.CLUSTER_NAME }}
-      - name: Run helm build
-        run: helm dependency build ./chart/shopgen
-      - name: Run helm deploy
-        run: helm upgrade -i shopgen ./chart/shopgen -n shopgen-production --create-namespace --values ./chart/shopgen/values.yaml --set image.tag=${{ github.run_number }}
+      - name: Run kubectl
+        run: |
+          echo ${{ secrets.RANCHER_KUBECONFIG }} | base64 -d > kube.config
+          kubectl --kubeconfig kube.config config get-contexts
+          helm dependency build ./chart/shopgen
+          helm upgrade -i shopgen-postgres oci://harbor.nicleary.com/dockerhub/bitnamicharts/postgresql --values ./postgres-values.yaml -n shopgen --set auth.password=${{ secrets.POSTGRES_PASSWORD }} --wait --create-namespace
+          helm upgrade -i shopgen ./chart/shopgen -n shopgen --create-namespace --values ./chart/shopgen/values.yaml --set image.tag=${{ github.run_number }} --wait

@@ -1,0 +1,24 @@
+image:
+  tag: 15.8.0
+  registry: harbor.nicleary.com
+  repository: "dockerhub/bitnami/postgresql"
+auth:
+  username: shopgen
+  database: shopgen
+
+primary:
+  persistence:
+    enabled: true
+    size: 16Gi
+  resources:
+    limits:
+      memory: "1024Mi"
+      cpu: "500m"
+    requests:
+      memory: "256Mi"
+      cpu: "250m"
+
+common:
+  names:
+    fullname: shopgen
+fullnameOverride: shopgen-postgres
