@@ -3,8 +3,16 @@
 {% block content %}
   <form action="/generate/shop" method="post">
       {% csrf_token %}
-      <label for="name">Shop name:</label>
-      <input id="name" type="text" name="name" value="{{ name }}">
+      <div class="row">
+          <div class="col-lg-4 col-lg-offset-2">
+              <label for="name" style="font-size: 20px">Shop Name</label>
+          </div>
+          <div class="col-lg-4 col-lg-offset-2">
+              <input id="name" type="text" name="name" value="{{ name }}">
+          </div>
+      </div>
+      <label for="equipment_common_min">Minimum number of common equipment</label>
+      <input id="equipment_common_min" type="text" name="equipment_common_min" value="{{ equipment_common_min }}">
       <input type="submit" value="OK">
   </form>
 {#  {{ form }}#}

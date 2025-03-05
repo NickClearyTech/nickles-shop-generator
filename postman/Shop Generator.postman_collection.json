@@ -1,0 +1,422 @@
+{
+	"info": {
+		"_postman_id": "fa958368-b245-4f18-bac0-d5c84450ebf7",
+		"name": "Shop Generator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30751797"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get Me",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/me",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Users",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/user/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "Get Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/item",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Item",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/item/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"item",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "69"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Systems",
+			"item": [
+				{
+					"name": "Get Systems",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/system",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"system"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get System",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/system/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"system",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Spells",
+			"item": [
+				{
+					"name": "Get Spells",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/spell",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"spell"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/spell/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"spell",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Get Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/job",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"job"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Job",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/job/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"job",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Shops",
+			"item": [
+				{
+					"name": "Get Shops",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/shop",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"shop"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Shop",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/shop/:id",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"shop",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Shop",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Nickles Shop To Torture His Friends Because Fuck Them\",\n    \"magical_items\": [\n        {\n            \"min_number\": 5,\n            \"max_number\": 10,\n            \"allow_duplicates\": true,\n            \"rarity\": \"C\"\n        },\n        {\n            \"min_number\": 3,\n            \"max_number\": 4,\n            \"allow_duplicates\": true,\n            \"rarity\": \"U\"\n        },\n        {\n            \"min_number\": 1,\n            \"max_number\": 3,\n            \"allow_duplicates\": true,\n            \"rarity\": \"R\"\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"rarity\": \"V\"\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"rarity\": \"L\"\n        }\n    ],\n    \"equipment\": [\n        {\n            \"min_number\": 5,\n            \"max_number\": 10,\n            \"allow_duplicates\": true,\n            \"rarity\": \"C\"\n        },\n        {\n            \"min_number\": 3,\n            \"max_number\": 4,\n            \"allow_duplicates\": true,\n            \"rarity\": \"U\"\n        },\n        {\n            \"min_number\": 1,\n            \"max_number\": 3,\n            \"allow_duplicates\": true,\n            \"rarity\": \"R\"\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"rarity\": \"V\"\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"rarity\": \"L\"\n        }\n    ],\n    \"potions\": [\n        {\n            \"min_number\": 6,\n            \"max_number\": 15,\n            \"allow_duplicates\": true,\n            \"rarity\": \"C\"\n        },\n        {\n            \"min_number\": 15,\n            \"max_number\": 25,\n            \"allow_duplicates\": true,\n            \"rarity\": \"U\"\n        },\n        {\n\n            \"min_number\": 0,\n            \"max_number\": 3,\n            \"allow_duplicates\": true,\n            \"rarity\": \"R\"\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"rarity\": \"V\"\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"rarity\": \"L\"\n        }\n    ],\n    \"spells\": [\n        {\n            \"min_number\": 3,\n            \"max_number\": 8,\n            \"allow_duplicates\": true,\n            \"level\": 1\n        },\n        {\n            \"min_number\": 2,\n            \"max_number\": 5,\n            \"allow_duplicates\": true,\n            \"level\": 2\n        },\n        {\n            \"min_number\": 1,\n            \"max_number\": 2,\n            \"allow_duplicates\": true,\n            \"level\": 3\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 1,\n            \"allow_duplicates\": true,\n            \"level\": 4\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"level\": 5\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"level\": 6\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"level\": 7\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 0,\n            \"allow_duplicates\": true,\n            \"level\": 8\n        },\n        {\n            \"min_number\": 0,\n            \"max_number\": 1,\n            \"allow_duplicates\": true,\n            \"level\": 9\n        },\n        {\n            \"min_number\": 5,\n            \"max_number\": 10,\n            \"allow_duplicates\": true,\n            \"level\": 0\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/shop/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"shop",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Quantity",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/shop/:id/:item_id/:quantity/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"shop",
+								":id",
+								":item_id",
+								":quantity",
+								""
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								},
+								{
+									"key": "item_id",
+									"value": "1124"
+								},
+								{
+									"key": "quantity",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Shop Async",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"names\": \"An amazing fun shop\",\n    \"magical_items\": [\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"C\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 100,\n            \"allow_duplicates\": true,\n            \"rarity\": \"U\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"R\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"V\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"L\"\n        }\n    ],\n    \"equipment\": [\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"C\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 100,\n            \"allow_duplicates\": true,\n            \"rarity\": \"U\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"R\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"V\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"L\"\n        }\n    ],\n    \"potions\": [\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"C\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 100,\n            \"allow_duplicates\": true,\n            \"rarity\": \"U\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"R\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"V\"\n        },\n        {\n            \"min_number\": 50,\n            \"max_number\": 1000,\n            \"allow_duplicates\": true,\n            \"rarity\": \"L\"\n        }\n    ],\n    \"spells\": [\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 1\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 2\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 3\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 4\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 5\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 6\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 7\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 8\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 9\n        },\n        {\n            \"min_number\": 500,\n            \"max_number\": 10000,\n            \"allow_duplicates\": true,\n            \"level\": 0\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/shop/create_async/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"shop",
+								"create_async",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "Token {{API_TOKEN}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

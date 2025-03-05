@@ -22,6 +22,9 @@ def generate_shop(request):
             # redirect to a new URL:
             logger.error("Form submitted :D")
             return HttpResponseRedirect("/thanks/")
+        else:
+            logger.error("Form is not valid")
+            return HttpResponseRedirect("/thankslmaotho/")
 
     # if a GET (or any other method) we'll create a blank form
     else:

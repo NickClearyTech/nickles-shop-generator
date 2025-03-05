@@ -58,7 +58,6 @@ class GenerateShopForm(forms.Form):
     magic_item_legendary_max = forms.IntegerField()
     magic_item_legendary_allow_duplicates = forms.BooleanField()
 
-
     # Potions fields
 
     # Potion items common
