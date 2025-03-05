@@ -58,7 +58,7 @@ services:
       - 5432:5432
     restart: "always"
   redis:
-    image: harbor.nicleary.com/dockerhub/redis:7.2.2
+    image: redis:7.2.2
     ports:
       - 6379:6379
     profiles:
