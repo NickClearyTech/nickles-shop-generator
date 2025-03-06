@@ -39,7 +39,7 @@ class Book(DefaultFields):
 
 class ItemBase(DefaultFields):
     name = models.CharField(max_length=128, null=False)
-    description = models.CharField(max_length=8192, null=True)
+    description = models.CharField(max_length=32768, null=True)
     system = models.ForeignKey(
         System, on_delete=models.CASCADE, null=False, db_index=True
     )
