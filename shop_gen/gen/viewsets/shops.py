@@ -6,7 +6,7 @@ from rest_framework.filters import SearchFilter
 from django_filters.rest_framework import DjangoFilterBackend
 
 from gen.serializers import ShopSerializer, ShopSettingsSerializer
-from gen.models import Shop, Job, ItemToShop
+from gen.models import Shop, Job, ItemToShop, Item
 from gen.generator.generate_shop import generate_shop
 from gen.tasks.generate_shop import generate_shop_task
 
@@ -70,13 +70,16 @@ class ShopViewSet(
             return Response(
                 {"Not Found": "Shop not found"}, status=status.HTTP_404_NOT_FOUND
             )
+        int_quant = int(quantity)
         try:
             shop_to_item: ItemToShop = ItemToShop.objects.get(shop=pk, item=item_id)
         except ObjectDoesNotExist:
-            return Response(
-                {"Not Found": "Item not found"}, status=status.HTTP_404_NOT_FOUND
-            )
-        int_quant = int(quantity)
+            try:
+                item_object = Item.objects.get(pk=item_id)
+            except ObjectDoesNotExist:
+                return Response({"Not Found": "Item not found"}, status=status.HTTP_400_BAD_REQUEST)
+            ItemToShop.objects.create(shop=shop, item=item_object, quantity=quantity)
+            return Response(ShopSerializer(instance=shop).data, status=status.HTTP_200_OK)
 
         if quantity is None or int_quant < 0:
             return Response({"Invalid": "Quantity must be greater than or equal to 0"})

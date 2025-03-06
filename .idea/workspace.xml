@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06f4b935-8f91-43bc-8564-99b1dd824047" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/shop_gen/gen/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop_gen/gen/viewsets/shops.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +175,7 @@
       <workItem from="1731769235004" duration="1772000" />
       <workItem from="1733546494295" duration="4589000" />
       <workItem from="1734191077907" duration="719000" />
-      <workItem from="1741143545336" duration="6402000" />
+      <workItem from="1741143545336" duration="7247000" />
     </task>
     <servers />
   </component>
