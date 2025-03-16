@@ -3,7 +3,7 @@
         "model": "gen.book",
         "pk": 1,
         "fields": {
-            "full_name": "Player's Handbook",
+            "full_name": "Player's Handbook (2014)",
             "system": 1,
             "abbreviation": "PHB"
         }
@@ -12,7 +12,7 @@
         "model": "gen.book",
         "pk": 2,
         "fields": {
-            "full_name": "Monster Manual",
+            "full_name": "Monster Manual (2014)",
             "system": 1,
             "abbreviation": "MM"
         }
@@ -21,7 +21,7 @@
         "model": "gen.book",
         "pk": 3,
         "fields": {
-            "full_name": "Dungeon Master's Guide",
+            "full_name": "Dungeon Master's Guide (2014)",
             "system": 1,
             "abbreviation": "DMG"
         }
@@ -165,15 +165,6 @@
         "model": "gen.book",
         "pk": 19,
         "fields": {
-            "full_name": "Humblewood Campaign Setting",
-            "system": 1,
-            "abbreviation": "HWCS"
-        }
-    },
-    {
-        "model": "gen.book",
-        "pk": 20,
-        "fields": {
             "full_name": "Acquisitions Incorporated",
             "system": 1,
             "abbreviation": "AI"
@@ -181,7 +172,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 21,
+        "pk": 20,
         "fields": {
             "full_name": "Dungeons & Dragons vs. Rick and Morty: Basic Rules",
             "system": 1,
@@ -190,7 +181,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 22,
+        "pk": 21,
         "fields": {
             "full_name": "Eberron: Rising from the Last War",
             "system": 1,
@@ -199,7 +190,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 23,
+        "pk": 22,
         "fields": {
             "full_name": "Explorer's Guide to Wildemount",
             "system": 1,
@@ -208,7 +199,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 24,
+        "pk": 23,
         "fields": {
             "full_name": "Mythic Odysseys of Theros",
             "system": 1,
@@ -217,7 +208,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 25,
+        "pk": 24,
         "fields": {
             "full_name": "Dungeon Master's Screen: Dungeon Kit",
             "system": 1,
@@ -226,7 +217,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 26,
+        "pk": 25,
         "fields": {
             "full_name": "Heroes' Feast",
             "system": 1,
@@ -235,7 +226,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 27,
+        "pk": 26,
         "fields": {
             "full_name": "Dungeon Master's Screen: Wilderness Kit",
             "system": 1,
@@ -244,7 +235,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 28,
+        "pk": 27,
         "fields": {
             "full_name": "Tasha's Cauldron of Everything",
             "system": 1,
@@ -253,7 +244,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 29,
+        "pk": 28,
         "fields": {
             "full_name": "Van Richten's Guide to Ravenloft",
             "system": 1,
@@ -262,7 +253,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 30,
+        "pk": 29,
         "fields": {
             "full_name": "Domains of Delight",
             "system": 1,
@@ -271,7 +262,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 31,
+        "pk": 30,
         "fields": {
             "full_name": "Minsc and Boo's Journal of Villainy",
             "system": 1,
@@ -280,7 +271,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 32,
+        "pk": 31,
         "fields": {
             "full_name": "Fizban's Treasury of Dragons",
             "system": 1,
@@ -289,7 +280,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 33,
+        "pk": 32,
         "fields": {
             "full_name": "Strixhaven: A Curriculum of Chaos",
             "system": 1,
@@ -298,7 +289,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 34,
+        "pk": 33,
         "fields": {
             "full_name": "Tal'Dorei Campaign Setting Reborn",
             "system": 1,
@@ -307,7 +298,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 35,
+        "pk": 34,
         "fields": {
             "full_name": "Mordenkainen Presents: Monsters of the Multiverse",
             "system": 1,
@@ -316,7 +307,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 36,
+        "pk": 35,
         "fields": {
             "full_name": "Tarot Deck",
             "system": 1,
@@ -325,7 +316,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 37,
+        "pk": 36,
         "fields": {
             "full_name": "Astral Adventurer's Guide",
             "system": 1,
@@ -334,7 +325,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 38,
+        "pk": 37,
         "fields": {
             "full_name": "Boo's Astral Menagerie",
             "system": 1,
@@ -343,7 +334,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 39,
+        "pk": 38,
         "fields": {
             "full_name": "Dungeon Master's Screen: Spelljammer",
             "system": 1,
@@ -352,7 +343,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 40,
+        "pk": 39,
         "fields": {
             "full_name": "Thieves' Gallery",
             "system": 1,
@@ -361,7 +352,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 41,
+        "pk": 40,
         "fields": {
             "full_name": "Tome of Beasts 1 (2023 Edition)",
             "system": 1,
@@ -370,7 +361,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 42,
+        "pk": 41,
         "fields": {
             "full_name": "Bigby Presents: Glory of the Giants",
             "system": 1,
@@ -379,7 +370,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 43,
+        "pk": 42,
         "fields": {
             "full_name": "Monstrous Compendium Volume 4: Eldraine Creatures",
             "system": 1,
@@ -388,7 +379,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 44,
+        "pk": 43,
         "fields": {
             "full_name": "Morte's Planar Parade",
             "system": 1,
@@ -397,7 +388,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 45,
+        "pk": 44,
         "fields": {
             "full_name": "Sigil and the Outlands",
             "system": 1,
@@ -406,7 +397,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 46,
+        "pk": 45,
         "fields": {
             "full_name": "Adventure Atlas: The Mortuary",
             "system": 1,
@@ -415,7 +406,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 47,
+        "pk": 46,
         "fields": {
             "full_name": "Heroes' Feast Flavors of the Multiverse",
             "system": 1,
@@ -424,7 +415,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 48,
+        "pk": 47,
         "fields": {
             "full_name": "The Book of Many Things",
             "system": 1,
@@ -433,7 +424,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 49,
+        "pk": 48,
         "fields": {
             "full_name": "The Deck of Many Things: Card Reference Guide",
             "system": 1,
@@ -442,7 +433,52 @@
     },
     {
         "model": "gen.book",
+        "pk": 49,
+        "fields": {
+            "full_name": "Puncheons and Flagons",
+            "system": 1,
+            "abbreviation": "PaF"
+        }
+    },
+    {
+        "model": "gen.book",
         "pk": 50,
+        "fields": {
+            "full_name": "Player's Handbook (2024)",
+            "system": 1,
+            "abbreviation": "XPHB"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 51,
+        "fields": {
+            "full_name": "Dungeon Master's Guide (2024)",
+            "system": 1,
+            "abbreviation": "XDMG"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 52,
+        "fields": {
+            "full_name": "Dungeon Master's Screen (2024)",
+            "system": 1,
+            "abbreviation": "XScreen"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 53,
+        "fields": {
+            "full_name": "Monster Manual (2025)",
+            "system": 1,
+            "abbreviation": "XMM"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 54,
         "fields": {
             "full_name": "Lost Mine of Phandelver",
             "system": 1,
@@ -451,7 +487,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 51,
+        "pk": 55,
         "fields": {
             "full_name": "Hoard of the Dragon Queen",
             "system": 1,
@@ -460,7 +496,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 52,
+        "pk": 56,
         "fields": {
             "full_name": "Rise of Tiamat",
             "system": 1,
@@ -469,7 +505,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 53,
+        "pk": 57,
         "fields": {
             "full_name": "Princes of the Apocalypse",
             "system": 1,
@@ -478,7 +514,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 54,
+        "pk": 58,
         "fields": {
             "full_name": "Out of the Abyss",
             "system": 1,
@@ -487,7 +523,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 55,
+        "pk": 59,
         "fields": {
             "full_name": "Curse of Strahd",
             "system": 1,
@@ -496,7 +532,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 56,
+        "pk": 60,
         "fields": {
             "full_name": "Storm King's Thunder",
             "system": 1,
@@ -505,7 +541,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 57,
+        "pk": 61,
         "fields": {
             "full_name": "Tales from the Yawning Portal: The Sunless Citadel",
             "system": 1,
@@ -514,7 +550,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 58,
+        "pk": 62,
         "fields": {
             "full_name": "Tales from the Yawning Portal: The Forge of Fury",
             "system": 1,
@@ -523,7 +559,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 59,
+        "pk": 63,
         "fields": {
             "full_name": "Tales from the Yawning Portal: The Hidden Shrine of Tamoachan",
             "system": 1,
@@ -532,7 +568,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 60,
+        "pk": 64,
         "fields": {
             "full_name": "Tales from the Yawning Portal: White Plume Mountain",
             "system": 1,
@@ -541,7 +577,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 61,
+        "pk": 65,
         "fields": {
             "full_name": "Tales from the Yawning Portal: Dead in Thay",
             "system": 1,
@@ -550,7 +586,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 62,
+        "pk": 66,
         "fields": {
             "full_name": "Tales from the Yawning Portal: Against the Giants",
             "system": 1,
@@ -559,7 +595,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 63,
+        "pk": 67,
         "fields": {
             "full_name": "Tales from the Yawning Portal: Tomb of Horrors",
             "system": 1,
@@ -568,7 +604,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 64,
+        "pk": 68,
         "fields": {
             "full_name": "Tomb of Annihilation",
             "system": 1,
@@ -577,7 +613,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 65,
+        "pk": 69,
         "fields": {
             "full_name": "The Tortle Package",
             "system": 1,
@@ -586,7 +622,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 66,
+        "pk": 70,
         "fields": {
             "full_name": "The Lost Kenku",
             "system": 1,
@@ -595,7 +631,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 67,
+        "pk": 71,
         "fields": {
             "full_name": "X Marks the Spot",
             "system": 1,
@@ -604,7 +640,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 68,
+        "pk": 72,
         "fields": {
             "full_name": "Waterdeep: Dragon Heist",
             "system": 1,
@@ -613,7 +649,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 69,
+        "pk": 73,
         "fields": {
             "full_name": "Lost Laboratory of Kwalish",
             "system": 1,
@@ -622,7 +658,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 70,
+        "pk": 74,
         "fields": {
             "full_name": "Waterdeep: Dungeon of the Mad Mage",
             "system": 1,
@@ -631,7 +667,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 71,
+        "pk": 75,
         "fields": {
             "full_name": "Krenko's Way",
             "system": 1,
@@ -640,7 +676,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 72,
+        "pk": 76,
         "fields": {
             "full_name": "A Zib for Your Thoughts",
             "system": 1,
@@ -649,7 +685,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 73,
+        "pk": 77,
         "fields": {
             "full_name": "Ghosts of Saltmarsh",
             "system": 1,
@@ -658,7 +694,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 74,
+        "pk": 78,
         "fields": {
             "full_name": "Hunt for the Thessalhydra",
             "system": 1,
@@ -667,16 +703,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 75,
-        "fields": {
-            "full_name": "Humblewood: Adventure in the Wood",
-            "system": 1,
-            "abbreviation": "HWAitW"
-        }
-    },
-    {
-        "model": "gen.book",
-        "pk": 76,
+        "pk": 79,
         "fields": {
             "full_name": "The Orrery of the Wanderer",
             "system": 1,
@@ -685,7 +712,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 77,
+        "pk": 80,
         "fields": {
             "full_name": "Essentials Kit: Dragon of Icespire Peak",
             "system": 1,
@@ -694,7 +721,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 78,
+        "pk": 81,
         "fields": {
             "full_name": "Essentials Kit: Storm Lord's Wrath",
             "system": 1,
@@ -703,7 +730,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 79,
+        "pk": 82,
         "fields": {
             "full_name": "Essentials Kit: Sleeping Dragon's Wake",
             "system": 1,
@@ -712,7 +739,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 80,
+        "pk": 83,
         "fields": {
             "full_name": "Essentials Kit: Divine Contention",
             "system": 1,
@@ -721,7 +748,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 81,
+        "pk": 84,
         "fields": {
             "full_name": "Baldur's Gate: Descent Into Avernus",
             "system": 1,
@@ -730,7 +757,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 82,
+        "pk": 85,
         "fields": {
             "full_name": "Locathah Rising",
             "system": 1,
@@ -739,7 +766,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 83,
+        "pk": 86,
         "fields": {
             "full_name": "Infernal Machine Rebuild",
             "system": 1,
@@ -748,7 +775,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 84,
+        "pk": 87,
         "fields": {
             "full_name": "Eberron: Forgotten Relics",
             "system": 1,
@@ -757,7 +784,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 85,
+        "pk": 88,
         "fields": {
             "full_name": "The Lost Dungeon of Rickedness: Big Rick Energy",
             "system": 1,
@@ -766,7 +793,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 86,
+        "pk": 89,
         "fields": {
             "full_name": "Wildemount: Tide of Retribution",
             "system": 1,
@@ -775,7 +802,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 87,
+        "pk": 90,
         "fields": {
             "full_name": "Wildemount: Dangerous Designs",
             "system": 1,
@@ -784,7 +811,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 88,
+        "pk": 91,
         "fields": {
             "full_name": "Wildemount: Frozen Sick",
             "system": 1,
@@ -793,7 +820,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 89,
+        "pk": 92,
         "fields": {
             "full_name": "Wildemount: Unwelcome Spirits",
             "system": 1,
@@ -802,7 +829,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 90,
+        "pk": 93,
         "fields": {
             "full_name": "Theros: No Silent Secret",
             "system": 1,
@@ -811,7 +838,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 91,
+        "pk": 94,
         "fields": {
             "full_name": "Icewind Dale: Rime of the Frostmaiden",
             "system": 1,
@@ -820,7 +847,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 92,
+        "pk": 95,
         "fields": {
             "full_name": "Candlekeep Mysteries",
             "system": 1,
@@ -829,7 +856,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 93,
+        "pk": 96,
         "fields": {
             "full_name": "Ravenloft: The House of Lament",
             "system": 1,
@@ -838,7 +865,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 94,
+        "pk": 97,
         "fields": {
             "full_name": "Return to the Glory",
             "system": 1,
@@ -847,7 +874,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 95,
+        "pk": 98,
         "fields": {
             "full_name": "Adventures in the Forgotten Realms: In Scarlet Flames",
             "system": 1,
@@ -856,7 +883,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 96,
+        "pk": 99,
         "fields": {
             "full_name": "Adventures in the Forgotten Realms: The Hidden Page",
             "system": 1,
@@ -865,7 +892,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 97,
+        "pk": 100,
         "fields": {
             "full_name": "Adventures in the Forgotten Realms: A Verdant Tomb",
             "system": 1,
@@ -874,7 +901,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 98,
+        "pk": 101,
         "fields": {
             "full_name": "Adventures in the Forgotten Realms: Deepest Night",
             "system": 1,
@@ -883,7 +910,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 99,
+        "pk": 102,
         "fields": {
             "full_name": "Adventures in the Forgotten Realms: From Cyan Depths",
             "system": 1,
@@ -892,7 +919,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 100,
+        "pk": 103,
         "fields": {
             "full_name": "NERDS Restoring Harmony: The Candy Mountain Caper",
             "system": 1,
@@ -901,7 +928,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 101,
+        "pk": 104,
         "fields": {
             "full_name": "NERDS Restoring Harmony: A Voice in the Wilderness",
             "system": 1,
@@ -910,7 +937,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 102,
+        "pk": 105,
         "fields": {
             "full_name": "NERDS Restoring Harmony: A Sticky Situation",
             "system": 1,
@@ -919,7 +946,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 103,
+        "pk": 106,
         "fields": {
             "full_name": "NERDS Restoring Harmony: Circus of Illusion",
             "system": 1,
@@ -928,7 +955,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 104,
+        "pk": 107,
         "fields": {
             "full_name": "NERDS Restoring Harmony: The Lost Tomb",
             "system": 1,
@@ -937,7 +964,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 105,
+        "pk": 108,
         "fields": {
             "full_name": "NERDS Restoring Harmony: A Web of Lies",
             "system": 1,
@@ -946,7 +973,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 106,
+        "pk": 109,
         "fields": {
             "full_name": "NERDS Restoring Harmony: Adventure Together",
             "system": 1,
@@ -955,7 +982,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 107,
+        "pk": 110,
         "fields": {
             "full_name": "The Wild Beyond the Witchlight",
             "system": 1,
@@ -964,7 +991,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 108,
+        "pk": 111,
         "fields": {
             "full_name": "Strixhaven: Campus Kerfuffle",
             "system": 1,
@@ -973,7 +1000,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 109,
+        "pk": 112,
         "fields": {
             "full_name": "Strixhaven: Hunt for Mage Tower",
             "system": 1,
@@ -982,7 +1009,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 110,
+        "pk": 113,
         "fields": {
             "full_name": "Strixhaven: The Magister's Masquerade",
             "system": 1,
@@ -991,7 +1018,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 111,
+        "pk": 114,
         "fields": {
             "full_name": "Strixhaven: A Reckoning in Ruins",
             "system": 1,
@@ -1000,7 +1027,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 112,
+        "pk": 115,
         "fields": {
             "full_name": "Critical Role: Call of the Netherdeep",
             "system": 1,
@@ -1009,7 +1036,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 113,
+        "pk": 116,
         "fields": {
             "full_name": "Journeys through the Radiant Citadel",
             "system": 1,
@@ -1018,7 +1045,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 114,
+        "pk": 117,
         "fields": {
             "full_name": "Dragons of Stormwreck Isle",
             "system": 1,
@@ -1027,7 +1054,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 115,
+        "pk": 118,
         "fields": {
             "full_name": "Spelljammer Academy",
             "system": 1,
@@ -1036,7 +1063,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 116,
+        "pk": 119,
         "fields": {
             "full_name": "Light of Xaryxis",
             "system": 1,
@@ -1045,7 +1072,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 117,
+        "pk": 120,
         "fields": {
             "full_name": "Dragonlance: Shadow of the Dragon Queen",
             "system": 1,
@@ -1054,7 +1081,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 118,
+        "pk": 121,
         "fields": {
             "full_name": "Keys from the Golden Vault",
             "system": 1,
@@ -1063,7 +1090,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 119,
+        "pk": 122,
         "fields": {
             "full_name": "Giants of the Star Forge",
             "system": 1,
@@ -1072,7 +1099,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 120,
+        "pk": 123,
         "fields": {
             "full_name": "Phandelver and Below: The Shattered Obelisk",
             "system": 1,
@@ -1081,7 +1108,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 121,
+        "pk": 124,
         "fields": {
             "full_name": "Lightning Keep",
             "system": 1,
@@ -1090,7 +1117,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 122,
+        "pk": 125,
         "fields": {
             "full_name": "Turn of Fortune's Wheel",
             "system": 1,
@@ -1099,7 +1126,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 123,
+        "pk": 126,
         "fields": {
             "full_name": "Chains of Asmodeus",
             "system": 1,
@@ -1108,7 +1135,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 124,
+        "pk": 127,
         "fields": {
             "full_name": "Peril in Pinebrook",
             "system": 1,
@@ -1117,7 +1144,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 125,
+        "pk": 128,
         "fields": {
             "full_name": "Heroes' Feast: Saving the Childrens Menu",
             "system": 1,
@@ -1126,7 +1153,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 126,
+        "pk": 129,
         "fields": {
             "full_name": "Grim Hollow: Lairs of Etharis",
             "system": 1,
@@ -1135,7 +1162,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 127,
+        "pk": 130,
         "fields": {
             "full_name": "Dungeons of Drakkenheim",
             "system": 1,
@@ -1144,7 +1171,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 128,
+        "pk": 131,
         "fields": {
             "full_name": "Descent into the Lost Caverns of Tsojcanth",
             "system": 1,
@@ -1153,7 +1180,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 129,
+        "pk": 132,
         "fields": {
             "full_name": "Red Dragon's Tale: A LEGO Adventure",
             "system": 1,
@@ -1162,7 +1189,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 130,
+        "pk": 133,
         "fields": {
             "full_name": "Vecna: Nest of the Eldritch Eye",
             "system": 1,
@@ -1171,7 +1198,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 131,
+        "pk": 134,
         "fields": {
             "full_name": "Vecna: Eve of Ruin",
             "system": 1,
@@ -1180,7 +1207,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 132,
+        "pk": 135,
         "fields": {
             "full_name": "Quests from the Infinite Staircase",
             "system": 1,
@@ -1189,7 +1216,34 @@
     },
     {
         "model": "gen.book",
-        "pk": 133,
+        "pk": 136,
+        "fields": {
+            "full_name": "Uni and the Hunt for the Lost Horn",
+            "system": 1,
+            "abbreviation": "UtHftLH"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 137,
+        "fields": {
+            "full_name": "Scions of Elemental Evil",
+            "system": 1,
+            "abbreviation": "ScoEE"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 138,
+        "fields": {
+            "full_name": "Hold Back The Dead",
+            "system": 1,
+            "abbreviation": "HBTD"
+        }
+    },
+    {
+        "model": "gen.book",
+        "pk": 139,
         "fields": {
             "full_name": "Tales from the Yawning Portal",
             "system": 1,
@@ -1198,7 +1252,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 134,
+        "pk": 140,
         "fields": {
             "full_name": "RoTOS",
             "system": 1,
@@ -1207,7 +1261,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 135,
+        "pk": 141,
         "fields": {
             "full_name": "Essentials Tome",
             "system": 1,
@@ -1216,7 +1270,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 136,
+        "pk": 142,
         "fields": {
             "full_name": "MVCV2DC",
             "system": 1,
@@ -1225,7 +1279,7 @@
     },
     {
         "model": "gen.book",
-        "pk": 137,
+        "pk": 143,
         "fields": {
             "full_name": "HAT-LMI",
             "system": 1,

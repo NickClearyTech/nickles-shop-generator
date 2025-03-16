@@ -5,9 +5,26 @@ import requests
 
 from pathlib import Path
 
-def pull_datafile_from_5etools(filename_to_save: Path, json_url: str):
-    requests
+DATAFILE_PATH = Path("datafiles")
 
+datafile_urls = {
+    "items.json": "https://5e.tools/data/items.json",
+    "items-base.json": "https://5e.tools/data/items-base.json",
+    "magic-variants.json": "https://5e.tools/data/magicvariants.json",
+    "books.json": "https://5e.tools/data/books.json",
+    "adventures.json": "https://5e.tools/data/adventures.json",
+    # "spells.json": "https://5e.tools/data/spells.json",
+    "discerning-merchant-guide.json": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/book/Dave%20Eisinger;%20Discerning%20Merchant's%20Price%20Guide.json",
+}
+
+def pull_datafile_from_5etools(filename_to_save: Path, json_url: str):
+    print(f"Getting {json_url}")
+    result = requests.get(json_url, headers={"Accept": "application/json", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0"})
+    if not result.ok:
+        print(f"Error getting json from {json_url}. Status {result.status_code}")
+        exit(1)
+    with open(filename_to_save, 'w') as file:
+        json.dump(result.json(), file, indent=4)
 
 
 def process_single_value_links(entry: str) -> str:
@@ -98,13 +115,18 @@ def get_col_indices_for_name_and_price(column_labels):
 def get_item_price_by_name(name: str) -> int:
     return item_costs.get(name, 0)
 
-if not Path("datafiles").exists() or not Path("datafiles").is_dir():
-    os.mkdir("datafiles")
+if not DATAFILE_PATH.exists() or not DATAFILE_PATH.is_dir():
+    os.mkdir(DATAFILE_PATH)
+
+for filename, url in datafile_urls.items():
+    pull_datafile_from_5etools(DATAFILE_PATH.joinpath(filename), url)
+
+
 
 
 item_costs = {}
 
-with open("discerning-merchant-guide.json", "r") as fh:
+with open(DATAFILE_PATH.joinpath("discerning-merchant-guide.json"), "r") as fh:
     data = json.load(fh)
 
 tables = data["table"]
@@ -129,7 +151,7 @@ internal_books = {}
 all_books = []
 current_pk = 1
 
-with open("books.json", "r") as fh:
+with open(DATAFILE_PATH.joinpath("books.json"), "r") as fh:
     data = json.load(fh)
 
 for book in data["book"]:
@@ -147,7 +169,7 @@ for book in data["book"]:
     internal_books[book["source"]] = current_pk
     current_pk += 1
 
-with open("adventures.json", "r") as fh:
+with open(DATAFILE_PATH.joinpath("adventures.json"), "r") as fh:
     data = json.load(fh)
 
 for adventure in data["adventure"]:
@@ -200,7 +222,7 @@ print("Processed books")
 all_items = []
 current_pk = 1
 
-with open("items.json") as fh:
+with open(DATAFILE_PATH.joinpath("items.json")) as fh:
     data = json.load(fh)
 
 types = set()
