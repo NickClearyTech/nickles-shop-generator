@@ -29,6 +29,14 @@ def process_multiple_value_links(entry: str) -> str:
 
     return result_string
 
+def not_nicks_shitty_regex_mess(entry: str) -> str:
+    result_string = entry
+    regex_strings = ["\[\"", "\['", "\\\"", "{#(\S+) ", "{@(\S+) ", "\|(\S+)", "}", "]", "']", "\"]"]
+
+    for regex_pattern in regex_strings:
+        result_string = re.sub(regex_pattern, "", result_string)
+
+    return result_string
 
 def get_spell_cost_by_level(level: int):
     match level:
@@ -194,11 +202,23 @@ with open("items.json") as fh:
 
 types = set()
 
+default_prices = {
+    "N": 100,
+    "C": 5000,
+    "U": 10000,
+    "R": 200000,
+    "V": 500000,
+    "L": 50000000,
+    "A": 100000000
+}
+
 for item in data["item"]:
 
     item_price = item["value"] if "value" in item.keys() else 0
     if item_price == 0:
         item_price = get_item_price_by_name(item["name"])
+        if item_price == 0:
+            item_price = default_prices[str(item["rarity"][0]).upper()] if "rarity" in item.keys() else None
 
     all_items.append(
         {
@@ -207,9 +227,10 @@ for item in data["item"]:
             "fields": {
                 "name": item["name"],
                 "description": (
-                    get_desc_from_entries(item["entries"])
-                    if "entries" in item.keys()
-                    else ""
+                    #get_desc_from_entries(item["entries"])
+                    #if "entries" in item.keys()
+                    #else ""
+                    not_nicks_shitty_regex_mess(str(item["entries"])) if "entries" in item.keys() else ""
                 ),
                 "system": 1,
                 "public": True,
