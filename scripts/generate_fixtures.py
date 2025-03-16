@@ -1,5 +1,13 @@
 import json
 import re
+import os
+import requests
+
+from pathlib import Path
+
+def pull_datafile_from_5etools(filename_to_save: Path, json_url: str):
+    requests
+
 
 
 def process_single_value_links(entry: str) -> str:
@@ -89,6 +97,9 @@ def get_col_indices_for_name_and_price(column_labels):
 
 def get_item_price_by_name(name: str) -> int:
     return item_costs.get(name, 0)
+
+if not Path("datafiles").exists() or not Path("datafiles").is_dir():
+    os.mkdir("datafiles")
 
 
 item_costs = {}
