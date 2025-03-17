@@ -2,7 +2,7 @@ webserverReplicaCount: 2
 workersReplicaCount: 2
 
 image:
-  repository: nicklesbread/shop_gen
+  repository: harbor.star3.com/library/shop_gen
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
