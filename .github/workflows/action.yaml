@@ -134,5 +134,5 @@ jobs:
           echo ${{ secrets.RANCHER_KUBECONFIG }} | base64 -d > kube.config
           kubectl --kubeconfig kube.config config get-contexts
           helm dependency build ./chart/shopgen
-          helm upgrade -i shopgen-postgres oci://harbor.nicleary.com/dockerhub/bitnamicharts/postgresql --values ./postgres-values.yaml -n shopgen --set auth.password=${{ secrets.POSTGRES_PASSWORD }} --wait --create-namespace --kubeconfig kube.config
+          helm upgrade -i shopgen-postgres oci://harbor.nicleary.com/dockerhub/bitnamicharts/postgresql --values ./chart/shopgen/postgres-values.yaml -n shopgen --set auth.password=${{ secrets.POSTGRES_PASSWORD }} --wait --create-namespace --kubeconfig kube.config
           helm upgrade -i shopgen ./chart/shopgen -n shopgen --create-namespace --values ./chart/shopgen/values.yaml --set image.tag=${{ github.run_number }} --wait --kubeconfig kube.config

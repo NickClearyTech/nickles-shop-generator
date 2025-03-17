@@ -261,7 +261,7 @@ for item in data["item"]:
                 "magical": (
                     True if "wondrous" in item.keys() and item["wondrous"] else False
                 ),
-                "type": item["type"] if "type" in item.keys() else None,
+                "type": item["type"].split("|")[0] if "type" in item.keys() else None,
             },
         }
     )
