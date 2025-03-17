@@ -140,7 +140,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -156,7 +156,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -172,7 +172,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -188,7 +188,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -380,7 +380,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -396,7 +396,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -444,7 +444,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -460,7 +460,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -636,7 +636,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -652,7 +652,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -668,7 +668,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -684,7 +684,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -780,7 +780,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -940,7 +940,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "AIR|DMG"
+            "type": "AIR"
         }
     },
     {
@@ -956,7 +956,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AIR|XPHB"
+            "type": "AIR"
         }
     },
     {
@@ -1020,7 +1020,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -1068,7 +1068,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -1180,7 +1180,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "FD|XPHB"
+            "type": "FD"
         }
     },
     {
@@ -1196,7 +1196,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -1212,7 +1212,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -1228,7 +1228,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -1244,7 +1244,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -1276,7 +1276,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -1292,7 +1292,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -1340,7 +1340,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SCF|XPHB"
+            "type": "SCF"
         }
     },
     {
@@ -1388,7 +1388,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -1612,7 +1612,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -1644,7 +1644,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -1740,7 +1740,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -1756,7 +1756,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -1868,7 +1868,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "HA|XPHB"
+            "type": "HA"
         }
     },
     {
@@ -1996,7 +1996,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -2076,7 +2076,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -2172,7 +2172,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -2188,7 +2188,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -2236,7 +2236,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "IDG|TDCSR"
+            "type": "IDG"
         }
     },
     {
@@ -2252,7 +2252,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -2268,7 +2268,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -2348,7 +2348,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -2652,7 +2652,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -2700,7 +2700,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -2716,7 +2716,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -2780,7 +2780,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -2876,7 +2876,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -2924,7 +2924,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -3084,7 +3084,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -3100,7 +3100,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -3116,7 +3116,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -3132,7 +3132,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -3148,7 +3148,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -3196,7 +3196,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -3564,7 +3564,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -3596,7 +3596,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -3612,7 +3612,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -3628,7 +3628,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -3644,7 +3644,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -3676,7 +3676,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -3692,7 +3692,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -3708,7 +3708,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -3724,7 +3724,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -3756,7 +3756,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -3868,7 +3868,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -3884,7 +3884,7 @@
             "owner": 1,
             "sourcebook": 74,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -3964,7 +3964,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -4092,7 +4092,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -4108,7 +4108,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -4172,7 +4172,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -4188,7 +4188,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -4204,7 +4204,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -4220,7 +4220,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -4236,7 +4236,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -4252,7 +4252,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -4268,7 +4268,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -4316,7 +4316,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -4332,7 +4332,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "EXP|XDMG"
+            "type": "EXP"
         }
     },
     {
@@ -4348,7 +4348,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -4396,7 +4396,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -4748,7 +4748,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -4796,7 +4796,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -4812,7 +4812,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -4892,7 +4892,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -4908,7 +4908,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -5068,7 +5068,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -5084,7 +5084,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -5100,7 +5100,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -5164,7 +5164,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "FD|XPHB"
+            "type": "FD"
         }
     },
     {
@@ -5228,7 +5228,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -5260,7 +5260,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -5276,7 +5276,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -5308,7 +5308,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -5324,7 +5324,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -5436,7 +5436,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -5468,7 +5468,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -5484,7 +5484,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -5516,7 +5516,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -5548,7 +5548,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -5644,7 +5644,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -5676,7 +5676,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -5724,7 +5724,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -5756,7 +5756,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -5900,7 +5900,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -6012,7 +6012,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -6028,7 +6028,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -6060,7 +6060,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -6220,7 +6220,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "VEH|XPHB"
+            "type": "VEH"
         }
     },
     {
@@ -6252,7 +6252,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -6284,7 +6284,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "VEH|XPHB"
+            "type": "VEH"
         }
     },
     {
@@ -6332,7 +6332,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -6348,7 +6348,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -6364,7 +6364,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -6380,7 +6380,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -6396,7 +6396,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -6412,7 +6412,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -6428,7 +6428,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -6444,7 +6444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -6572,7 +6572,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -6588,7 +6588,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -6604,7 +6604,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -6620,7 +6620,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -6652,7 +6652,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -6668,7 +6668,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -6732,7 +6732,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "VEH|XPHB"
+            "type": "VEH"
         }
     },
     {
@@ -6812,7 +6812,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "FD|XPHB"
+            "type": "FD"
         }
     },
     {
@@ -6844,7 +6844,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -6892,7 +6892,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -6988,7 +6988,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -7004,7 +7004,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -7020,7 +7020,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -7036,7 +7036,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -7084,7 +7084,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -7212,7 +7212,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -7228,7 +7228,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -7308,7 +7308,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -7660,7 +7660,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -7676,7 +7676,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -7692,7 +7692,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -7772,7 +7772,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -7836,7 +7836,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -7980,7 +7980,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "FD|XPHB"
+            "type": "FD"
         }
     },
     {
@@ -8028,7 +8028,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -8092,7 +8092,7 @@
             "owner": 1,
             "sourcebook": 135,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -8204,7 +8204,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -8236,7 +8236,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -8284,7 +8284,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -8300,7 +8300,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -8332,7 +8332,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -8348,7 +8348,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -8380,7 +8380,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -8396,7 +8396,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -8428,7 +8428,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -8476,7 +8476,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -8508,7 +8508,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -8588,7 +8588,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -8620,7 +8620,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -9084,7 +9084,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -9100,7 +9100,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -9612,7 +9612,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -9724,7 +9724,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -9740,7 +9740,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -9772,7 +9772,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "GS|XPHB"
+            "type": "GS"
         }
     },
     {
@@ -9836,7 +9836,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -9884,7 +9884,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -9916,7 +9916,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "T|XPHB"
+            "type": "T"
         }
     },
     {
@@ -10156,7 +10156,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -10252,7 +10252,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "GS|XPHB"
+            "type": "GS"
         }
     },
     {
@@ -10476,7 +10476,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -10700,7 +10700,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -10716,7 +10716,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -10732,7 +10732,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -10748,7 +10748,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "EXP|XDMG"
+            "type": "EXP"
         }
     },
     {
@@ -11244,7 +11244,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -11276,7 +11276,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -11356,7 +11356,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SCF|XPHB"
+            "type": "SCF"
         }
     },
     {
@@ -11372,7 +11372,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -11388,7 +11388,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -11404,7 +11404,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -11420,7 +11420,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -11436,7 +11436,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -11452,7 +11452,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -11468,7 +11468,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -11484,7 +11484,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -11564,7 +11564,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11580,7 +11580,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11596,7 +11596,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11612,7 +11612,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11628,7 +11628,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11644,7 +11644,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11660,7 +11660,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11676,7 +11676,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11692,7 +11692,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -11724,7 +11724,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -11804,7 +11804,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -11916,7 +11916,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "TAH|XPHB"
+            "type": "TAH"
         }
     },
     {
@@ -11948,7 +11948,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -11980,7 +11980,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -11996,7 +11996,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -12044,7 +12044,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -12060,7 +12060,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12076,7 +12076,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12220,7 +12220,7 @@
             "owner": 1,
             "sourcebook": 19,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -12380,7 +12380,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12412,7 +12412,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "TAH|XPHB"
+            "type": "TAH"
         }
     },
     {
@@ -12828,7 +12828,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -12844,7 +12844,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12860,7 +12860,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -12876,7 +12876,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12892,7 +12892,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12908,7 +12908,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12940,7 +12940,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "FD|XPHB"
+            "type": "FD"
         }
     },
     {
@@ -12956,7 +12956,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -12988,7 +12988,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -13004,7 +13004,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -13148,7 +13148,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -13260,7 +13260,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -13308,7 +13308,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -13404,7 +13404,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "T|XPHB"
+            "type": "T"
         }
     },
     {
@@ -13420,7 +13420,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -13436,7 +13436,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "EXP|XDMG"
+            "type": "EXP"
         }
     },
     {
@@ -13516,7 +13516,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SHP|XPHB"
+            "type": "SHP"
         }
     },
     {
@@ -13532,7 +13532,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -13548,7 +13548,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -13788,7 +13788,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -13820,7 +13820,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -13852,7 +13852,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "LA|XPHB"
+            "type": "LA"
         }
     },
     {
@@ -13884,7 +13884,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -13932,7 +13932,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -14076,7 +14076,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -14124,7 +14124,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -14204,7 +14204,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -14252,7 +14252,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TB|XDMG"
+            "type": "TB"
         }
     },
     {
@@ -14268,7 +14268,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14284,7 +14284,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14300,7 +14300,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14316,7 +14316,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14348,7 +14348,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14364,7 +14364,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14380,7 +14380,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14396,7 +14396,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14412,7 +14412,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14428,7 +14428,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14444,7 +14444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14460,7 +14460,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14492,7 +14492,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -14508,7 +14508,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14524,7 +14524,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14540,7 +14540,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14556,7 +14556,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14572,7 +14572,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14588,7 +14588,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14604,7 +14604,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14620,7 +14620,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14636,7 +14636,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14652,7 +14652,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14668,7 +14668,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14684,7 +14684,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14700,7 +14700,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14716,7 +14716,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14732,7 +14732,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -14764,7 +14764,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14780,7 +14780,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -14796,7 +14796,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -14860,7 +14860,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -15004,7 +15004,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -15036,7 +15036,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -15148,7 +15148,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -15212,7 +15212,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "EXP|XDMG"
+            "type": "EXP"
         }
     },
     {
@@ -15228,7 +15228,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "EXP|XDMG"
+            "type": "EXP"
         }
     },
     {
@@ -15244,7 +15244,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -15260,7 +15260,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -15372,7 +15372,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -15436,7 +15436,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -15692,7 +15692,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -15996,7 +15996,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -16012,7 +16012,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -16060,7 +16060,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "T|XPHB"
+            "type": "T"
         }
     },
     {
@@ -16284,7 +16284,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -16380,7 +16380,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -16652,7 +16652,7 @@
             "owner": 1,
             "sourcebook": 74,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -16828,7 +16828,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -16956,7 +16956,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -16972,7 +16972,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -17132,7 +17132,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -17180,7 +17180,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -18124,7 +18124,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -18236,7 +18236,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -18268,7 +18268,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -18284,7 +18284,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -18348,7 +18348,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -18380,7 +18380,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -18396,7 +18396,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -18412,7 +18412,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -18428,7 +18428,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -18444,7 +18444,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18460,7 +18460,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18476,7 +18476,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -18492,7 +18492,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18508,7 +18508,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18540,7 +18540,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18556,7 +18556,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18588,7 +18588,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -18604,7 +18604,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -18652,7 +18652,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -18700,7 +18700,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -18716,7 +18716,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -18780,7 +18780,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18796,7 +18796,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -18812,7 +18812,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18828,7 +18828,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18844,7 +18844,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -18860,7 +18860,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -18876,7 +18876,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -18908,7 +18908,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -18940,7 +18940,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -19004,7 +19004,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SHP|XPHB"
+            "type": "SHP"
         }
     },
     {
@@ -19292,7 +19292,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -19340,7 +19340,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -19356,7 +19356,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -19420,7 +19420,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -19436,7 +19436,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -19452,7 +19452,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -19468,7 +19468,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -19484,7 +19484,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -19500,7 +19500,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -19516,7 +19516,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -19628,7 +19628,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -19772,7 +19772,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -19820,7 +19820,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -19884,7 +19884,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -19932,7 +19932,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -19980,7 +19980,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SHP|XPHB"
+            "type": "SHP"
         }
     },
     {
@@ -20124,7 +20124,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -20140,7 +20140,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -20220,7 +20220,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -20252,7 +20252,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -20284,7 +20284,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -20412,7 +20412,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -20428,7 +20428,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -20444,7 +20444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -20476,7 +20476,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -20508,7 +20508,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -20780,7 +20780,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -20812,7 +20812,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -20828,7 +20828,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -20892,7 +20892,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -20956,7 +20956,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -20988,7 +20988,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -21260,7 +21260,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -21308,7 +21308,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "TAH|XPHB"
+            "type": "TAH"
         }
     },
     {
@@ -21532,7 +21532,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -21740,7 +21740,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -21756,7 +21756,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -21788,7 +21788,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -21804,7 +21804,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -21868,7 +21868,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -22076,7 +22076,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -22124,7 +22124,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "T|XPHB"
+            "type": "T"
         }
     },
     {
@@ -22172,7 +22172,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -22220,7 +22220,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -22268,7 +22268,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -22284,7 +22284,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -22364,7 +22364,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -22380,7 +22380,7 @@
             "owner": 1,
             "sourcebook": 95,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -22396,7 +22396,7 @@
             "owner": 1,
             "sourcebook": 123,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -22476,7 +22476,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -22588,7 +22588,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -22604,7 +22604,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -22636,7 +22636,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -22652,7 +22652,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -22700,7 +22700,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -22748,7 +22748,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -22780,7 +22780,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -22812,7 +22812,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -22844,7 +22844,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -22860,7 +22860,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -22876,7 +22876,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -22908,7 +22908,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "IDG|TDCSR"
+            "type": "IDG"
         }
     },
     {
@@ -22924,7 +22924,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -22940,7 +22940,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -22956,7 +22956,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -22972,7 +22972,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -23244,7 +23244,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -23388,7 +23388,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -23420,7 +23420,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -23436,7 +23436,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -23452,7 +23452,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -23484,7 +23484,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -23500,7 +23500,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -23516,7 +23516,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -23532,7 +23532,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -23564,7 +23564,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -23580,7 +23580,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -23644,7 +23644,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -23708,7 +23708,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -23724,7 +23724,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -23820,7 +23820,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -23852,7 +23852,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -24012,7 +24012,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -24028,7 +24028,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -24060,7 +24060,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -24092,7 +24092,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -24140,7 +24140,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -24524,7 +24524,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -24588,7 +24588,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -24604,7 +24604,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -24620,7 +24620,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -24636,7 +24636,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -24668,7 +24668,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -24700,7 +24700,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "GS|XPHB"
+            "type": "GS"
         }
     },
     {
@@ -24748,7 +24748,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "T|XPHB"
+            "type": "T"
         }
     },
     {
@@ -24764,7 +24764,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -24876,7 +24876,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -24940,7 +24940,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -25036,7 +25036,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25084,7 +25084,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25132,7 +25132,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25164,7 +25164,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25196,7 +25196,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25228,7 +25228,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25260,7 +25260,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25292,7 +25292,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25340,7 +25340,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25372,7 +25372,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25404,7 +25404,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25436,7 +25436,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25468,7 +25468,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25500,7 +25500,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25532,7 +25532,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25580,7 +25580,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25596,7 +25596,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25628,7 +25628,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25660,7 +25660,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25692,7 +25692,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25724,7 +25724,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25756,7 +25756,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25788,7 +25788,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25820,7 +25820,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25852,7 +25852,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25948,7 +25948,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -25980,7 +25980,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26012,7 +26012,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26044,7 +26044,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26124,7 +26124,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26140,7 +26140,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26172,7 +26172,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26204,7 +26204,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26236,7 +26236,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26268,7 +26268,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26300,7 +26300,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26332,7 +26332,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26364,7 +26364,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26396,7 +26396,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26444,7 +26444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "P|XPHB"
+            "type": "P"
         }
     },
     {
@@ -26476,7 +26476,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -26508,7 +26508,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -26684,7 +26684,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -26924,7 +26924,7 @@
             "owner": 1,
             "sourcebook": 130,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -26956,7 +26956,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -27292,7 +27292,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -27308,7 +27308,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -27324,7 +27324,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -27356,7 +27356,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -27404,7 +27404,7 @@
             "owner": 1,
             "sourcebook": 95,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -27452,7 +27452,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -27516,7 +27516,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -27644,7 +27644,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -27724,7 +27724,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SCF|XPHB"
+            "type": "SCF"
         }
     },
     {
@@ -27804,7 +27804,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -27820,7 +27820,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -27852,7 +27852,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -27884,7 +27884,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "TAH|XPHB"
+            "type": "TAH"
         }
     },
     {
@@ -27900,7 +27900,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -27916,7 +27916,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -27932,7 +27932,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -27948,7 +27948,7 @@
             "owner": 1,
             "sourcebook": 41,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -27964,7 +27964,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -27980,7 +27980,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -27996,7 +27996,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28012,7 +28012,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28028,7 +28028,7 @@
             "owner": 1,
             "sourcebook": 126,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28044,7 +28044,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28060,7 +28060,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28076,7 +28076,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28092,7 +28092,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28108,7 +28108,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28124,7 +28124,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28140,7 +28140,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28156,7 +28156,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28172,7 +28172,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28188,7 +28188,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28204,7 +28204,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28220,7 +28220,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28236,7 +28236,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28252,7 +28252,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28268,7 +28268,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28284,7 +28284,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28300,7 +28300,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28316,7 +28316,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28332,7 +28332,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28348,7 +28348,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28364,7 +28364,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28380,7 +28380,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28396,7 +28396,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28412,7 +28412,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28428,7 +28428,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28444,7 +28444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28460,7 +28460,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28476,7 +28476,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28492,7 +28492,7 @@
             "owner": 1,
             "sourcebook": 22,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28508,7 +28508,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28524,7 +28524,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28540,7 +28540,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28556,7 +28556,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28572,7 +28572,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28588,7 +28588,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28604,7 +28604,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28620,7 +28620,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28636,7 +28636,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28652,7 +28652,7 @@
             "owner": 1,
             "sourcebook": 115,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28668,7 +28668,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28684,7 +28684,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28700,7 +28700,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28716,7 +28716,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28732,7 +28732,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28748,7 +28748,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28764,7 +28764,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28780,7 +28780,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28796,7 +28796,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28812,7 +28812,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28828,7 +28828,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28844,7 +28844,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28860,7 +28860,7 @@
             "owner": 1,
             "sourcebook": 22,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28876,7 +28876,7 @@
             "owner": 1,
             "sourcebook": 126,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28892,7 +28892,7 @@
             "owner": 1,
             "sourcebook": 123,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28908,7 +28908,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28924,7 +28924,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28940,7 +28940,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28956,7 +28956,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -28972,7 +28972,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -28988,7 +28988,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -29004,7 +29004,7 @@
             "owner": 1,
             "sourcebook": 126,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29020,7 +29020,7 @@
             "owner": 1,
             "sourcebook": 72,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29036,7 +29036,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29052,7 +29052,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -29068,7 +29068,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29084,7 +29084,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29100,7 +29100,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -29116,7 +29116,7 @@
             "owner": 1,
             "sourcebook": 68,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29132,7 +29132,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -29148,7 +29148,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RG|XDMG"
+            "type": "RG"
         }
     },
     {
@@ -29180,7 +29180,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -29420,7 +29420,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29436,7 +29436,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -29452,7 +29452,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29468,7 +29468,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -29484,7 +29484,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29500,7 +29500,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29516,7 +29516,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -29548,7 +29548,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29564,7 +29564,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -29580,7 +29580,7 @@
             "owner": 1,
             "sourcebook": 22,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29596,7 +29596,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29612,7 +29612,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -29628,7 +29628,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29644,7 +29644,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -29660,7 +29660,7 @@
             "owner": 1,
             "sourcebook": 134,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29676,7 +29676,7 @@
             "owner": 1,
             "sourcebook": 60,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -29724,7 +29724,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -29868,7 +29868,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SHP|XPHB"
+            "type": "SHP"
         }
     },
     {
@@ -29884,7 +29884,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -29900,7 +29900,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -29948,7 +29948,7 @@
             "owner": 1,
             "sourcebook": 126,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -30140,7 +30140,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -30220,7 +30220,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -30268,7 +30268,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -30284,7 +30284,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -30300,7 +30300,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -30316,7 +30316,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -30332,7 +30332,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -30348,7 +30348,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -30380,7 +30380,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SHP|XPHB"
+            "type": "SHP"
         }
     },
     {
@@ -30444,7 +30444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -30492,7 +30492,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -30508,7 +30508,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -30604,7 +30604,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -30636,7 +30636,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -30684,7 +30684,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -30732,7 +30732,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30748,7 +30748,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30764,7 +30764,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30780,7 +30780,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30796,7 +30796,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30812,7 +30812,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30828,7 +30828,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30844,7 +30844,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30860,7 +30860,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30876,7 +30876,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30892,7 +30892,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30908,7 +30908,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30924,7 +30924,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30940,7 +30940,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -30956,7 +30956,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -30972,7 +30972,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -30988,7 +30988,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31004,7 +31004,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31020,7 +31020,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31036,7 +31036,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31052,7 +31052,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31068,7 +31068,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31084,7 +31084,7 @@
             "owner": 1,
             "sourcebook": 94,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31100,7 +31100,7 @@
             "owner": 1,
             "sourcebook": 94,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -31116,7 +31116,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31132,7 +31132,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31148,7 +31148,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31164,7 +31164,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31180,7 +31180,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31196,7 +31196,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31212,7 +31212,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -31292,7 +31292,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -31404,7 +31404,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -31452,7 +31452,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -31484,7 +31484,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -31708,7 +31708,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -31740,7 +31740,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -31804,7 +31804,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -31852,7 +31852,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -31964,7 +31964,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -31996,7 +31996,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -32028,7 +32028,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -32060,7 +32060,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -32092,7 +32092,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32124,7 +32124,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -32204,7 +32204,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -32252,7 +32252,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32268,7 +32268,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -32284,7 +32284,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TB|XDMG"
+            "type": "TB"
         }
     },
     {
@@ -32300,7 +32300,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TB|XDMG"
+            "type": "TB"
         }
     },
     {
@@ -32316,7 +32316,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32332,7 +32332,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -32364,7 +32364,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -32380,7 +32380,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32396,7 +32396,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -32412,7 +32412,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32428,7 +32428,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32444,7 +32444,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32460,7 +32460,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -32476,7 +32476,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32492,7 +32492,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32524,7 +32524,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32572,7 +32572,7 @@
             "owner": 1,
             "sourcebook": 17,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -32748,7 +32748,7 @@
             "owner": 1,
             "sourcebook": 22,
             "magical": false,
-            "type": "AIR|DMG"
+            "type": "AIR"
         }
     },
     {
@@ -32764,7 +32764,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "AIR|DMG"
+            "type": "AIR"
         }
     },
     {
@@ -32796,7 +32796,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "VEH|XPHB"
+            "type": "VEH"
         }
     },
     {
@@ -32844,7 +32844,7 @@
             "owner": 1,
             "sourcebook": 135,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -32972,7 +32972,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -32988,7 +32988,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -33004,7 +33004,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -33020,7 +33020,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -33052,7 +33052,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -33068,7 +33068,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -33084,7 +33084,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "EXP|XDMG"
+            "type": "EXP"
         }
     },
     {
@@ -33276,7 +33276,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -33516,7 +33516,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33532,7 +33532,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33548,7 +33548,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33564,7 +33564,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33580,7 +33580,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33596,7 +33596,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33612,7 +33612,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33628,7 +33628,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33644,7 +33644,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33660,7 +33660,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "SC|DMG"
+            "type": "SC"
         }
     },
     {
@@ -33676,7 +33676,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33692,7 +33692,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33708,7 +33708,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33724,7 +33724,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33740,7 +33740,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33756,7 +33756,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33772,7 +33772,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33788,7 +33788,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33804,7 +33804,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33820,7 +33820,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "SC|XPHB"
+            "type": "SC"
         }
     },
     {
@@ -33868,7 +33868,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "S|XPHB"
+            "type": "S"
         }
     },
     {
@@ -33900,7 +33900,7 @@
             "owner": 1,
             "sourcebook": 130,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -34108,7 +34108,7 @@
             "owner": 1,
             "sourcebook": 47,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -34124,7 +34124,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -34140,7 +34140,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -34252,7 +34252,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SCF|XPHB"
+            "type": "SCF"
         }
     },
     {
@@ -34284,7 +34284,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -34316,7 +34316,7 @@
             "owner": 1,
             "sourcebook": 130,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -34332,7 +34332,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -34364,7 +34364,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "TAH|XPHB"
+            "type": "TAH"
         }
     },
     {
@@ -34380,7 +34380,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34412,7 +34412,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34460,7 +34460,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34572,7 +34572,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34588,7 +34588,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34636,7 +34636,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34668,7 +34668,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34700,7 +34700,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34748,7 +34748,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34780,7 +34780,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34812,7 +34812,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34876,7 +34876,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34908,7 +34908,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34956,7 +34956,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -34988,7 +34988,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -35020,7 +35020,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -35052,7 +35052,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -35116,7 +35116,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -35132,7 +35132,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -35148,7 +35148,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -35164,7 +35164,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -35180,7 +35180,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -35196,7 +35196,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -35292,7 +35292,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "EXP|DMG"
+            "type": "EXP"
         }
     },
     {
@@ -35516,7 +35516,7 @@
             "owner": 1,
             "sourcebook": 95,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -35612,7 +35612,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -35676,7 +35676,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -35708,7 +35708,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -35820,7 +35820,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "IDG|TDCSR"
+            "type": "IDG"
         }
     },
     {
@@ -35836,7 +35836,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "IDG|TDCSR"
+            "type": "IDG"
         }
     },
     {
@@ -35852,7 +35852,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "IDG|TDCSR"
+            "type": "IDG"
         }
     },
     {
@@ -35868,7 +35868,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -36044,7 +36044,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -36444,7 +36444,7 @@
             "owner": 1,
             "sourcebook": 72,
             "magical": false,
-            "type": "RG|DMG"
+            "type": "RG"
         }
     },
     {
@@ -36476,7 +36476,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -36492,7 +36492,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "RD|DMG"
+            "type": "RD"
         }
     },
     {
@@ -36508,7 +36508,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "RD|XDMG"
+            "type": "RD"
         }
     },
     {
@@ -36716,7 +36716,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "T|XPHB"
+            "type": "T"
         }
     },
     {
@@ -36748,7 +36748,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "GS|XPHB"
+            "type": "GS"
         }
     },
     {
@@ -36812,7 +36812,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -36844,7 +36844,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -36860,7 +36860,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -36908,7 +36908,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -36956,7 +36956,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -36988,7 +36988,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -37196,7 +37196,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -37212,7 +37212,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -37260,7 +37260,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -37292,7 +37292,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -37324,7 +37324,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -37340,7 +37340,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -37388,7 +37388,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -37404,7 +37404,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -37436,7 +37436,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -37516,7 +37516,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -37580,7 +37580,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -37596,7 +37596,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -37612,7 +37612,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -37628,7 +37628,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -37676,7 +37676,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -37804,7 +37804,7 @@
             "owner": 1,
             "sourcebook": 14,
             "magical": false,
-            "type": "$A|DMG"
+            "type": "$A"
         }
     },
     {
@@ -37932,7 +37932,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -38092,7 +38092,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "VEH|XPHB"
+            "type": "VEH"
         }
     },
     {
@@ -38156,7 +38156,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38172,7 +38172,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38188,7 +38188,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38204,7 +38204,7 @@
             "owner": 1,
             "sourcebook": 13,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38220,7 +38220,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38236,7 +38236,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38252,7 +38252,7 @@
             "owner": 1,
             "sourcebook": 139,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38268,7 +38268,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38284,7 +38284,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38300,7 +38300,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38316,7 +38316,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38332,7 +38332,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38348,7 +38348,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38364,7 +38364,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38380,7 +38380,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38396,7 +38396,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38412,7 +38412,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38428,7 +38428,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38444,7 +38444,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38460,7 +38460,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38476,7 +38476,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38492,7 +38492,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38508,7 +38508,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38524,7 +38524,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38540,7 +38540,7 @@
             "owner": 1,
             "sourcebook": 13,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38556,7 +38556,7 @@
             "owner": 1,
             "sourcebook": 13,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38572,7 +38572,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38588,7 +38588,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38604,7 +38604,7 @@
             "owner": 1,
             "sourcebook": 129,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38620,7 +38620,7 @@
             "owner": 1,
             "sourcebook": 13,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38636,7 +38636,7 @@
             "owner": 1,
             "sourcebook": 58,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38652,7 +38652,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38668,7 +38668,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38684,7 +38684,7 @@
             "owner": 1,
             "sourcebook": 55,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38700,7 +38700,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "WD|DMG"
+            "type": "WD"
         }
     },
     {
@@ -38716,7 +38716,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "WD|XDMG"
+            "type": "WD"
         }
     },
     {
@@ -38780,7 +38780,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "MNT|XPHB"
+            "type": "MNT"
         }
     },
     {
@@ -38828,7 +38828,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SHP|XPHB"
+            "type": "SHP"
         }
     },
     {
@@ -38844,7 +38844,7 @@
             "owner": 1,
             "sourcebook": 36,
             "magical": false,
-            "type": "SPC|AAG"
+            "type": "SPC"
         }
     },
     {
@@ -38892,7 +38892,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -38924,7 +38924,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -38988,7 +38988,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -39052,7 +39052,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$A|XDMG"
+            "type": "$A"
         }
     },
     {
@@ -39084,7 +39084,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "TG|XDMG"
+            "type": "TG"
         }
     },
     {
@@ -39148,7 +39148,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "M|XPHB"
+            "type": "M"
         }
     },
     {
@@ -39324,7 +39324,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "MA|XPHB"
+            "type": "MA"
         }
     },
     {
@@ -39692,7 +39692,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "AT|XPHB"
+            "type": "AT"
         }
     },
     {
@@ -39932,7 +39932,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "G|XPHB"
+            "type": "G"
         }
     },
     {
@@ -39980,7 +39980,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -39996,7 +39996,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     },
     {
@@ -40044,7 +40044,7 @@
             "owner": 1,
             "sourcebook": 50,
             "magical": false,
-            "type": "SCF|XPHB"
+            "type": "SCF"
         }
     },
     {
@@ -40092,7 +40092,7 @@
             "owner": 1,
             "sourcebook": 33,
             "magical": false,
-            "type": "IDG|TDCSR"
+            "type": "IDG"
         }
     },
     {
@@ -40108,7 +40108,7 @@
             "owner": 1,
             "sourcebook": 3,
             "magical": false,
-            "type": "$G|DMG"
+            "type": "$G"
         }
     },
     {
@@ -40124,7 +40124,7 @@
             "owner": 1,
             "sourcebook": 51,
             "magical": false,
-            "type": "$G|XDMG"
+            "type": "$G"
         }
     }
 ]
