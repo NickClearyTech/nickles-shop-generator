@@ -126,7 +126,7 @@ jobs:
       - codeql
     name: Deploy
     runs-on: nicleary-ubuntu-k8s
-    if: "github.ref == 'refs/heads/master'"
+    if: github.ref == 'refs/heads/main'
     container: harbor.nicleary.com/dockerhub/dtzar/helm-kubectl:3.12.0
     environment: 
       name: Production
