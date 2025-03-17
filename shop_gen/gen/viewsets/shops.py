@@ -77,9 +77,13 @@ class ShopViewSet(
             try:
                 item_object = Item.objects.get(pk=item_id)
             except ObjectDoesNotExist:
-                return Response({"Not Found": "Item not found"}, status=status.HTTP_400_BAD_REQUEST)
+                return Response(
+                    {"Not Found": "Item not found"}, status=status.HTTP_400_BAD_REQUEST
+                )
             ItemToShop.objects.create(shop=shop, item=item_object, quantity=quantity)
-            return Response(ShopSerializer(instance=shop).data, status=status.HTTP_200_OK)
+            return Response(
+                ShopSerializer(instance=shop).data, status=status.HTTP_200_OK
+            )
 
         if quantity is None or int_quant < 0:
             return Response({"Invalid": "Quantity must be greater than or equal to 0"})

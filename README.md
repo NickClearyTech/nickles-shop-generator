@@ -36,3 +36,13 @@ Next, simply run the request under Shops > Generate Shop. This will respond with
 
 #### Accessing the shop
 In the browser, browse to `http://localhost:8000/shop/<SHOP ID>`
+
+### Running Tests
+
+To run pytest, from the terminal install the contents of both `requirements.txt` and `requirements-dev.txt` with `pip`
+
+Next, run `pytest -c shop_gen/pytest.ini`
+
+### Formatting
+
+The `black` code formatter is used for formatting and linting python files in this project. To run, after installing the pip packages in `requirements-dev.txt`, simply run `black .`

@@ -14,15 +14,6 @@ services:
     depends_on:
       - postgres
       - initializer
-  # test:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.test
-  #   profiles:
-  #     - test
-  #   volumes:
-  #     - ./shop_gen:/shop_gen
-  #   command: ["bash", "-c", "./test-entrypoint.sh"]
   initializer:
     build:
       context: .
@@ -53,6 +44,9 @@ services:
     restart: "always"
   redis:
     image: redis:7.2.2
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
     ports:
       - 6379:6379
     volumes:
