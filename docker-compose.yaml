@@ -14,15 +14,6 @@ services:
     depends_on:
       - postgres
       - initializer
-  # test:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile.test
-  #   profiles:
-  #     - test
-  #   volumes:
-  #     - ./shop_gen:/shop_gen
-  #   command: ["bash", "-c", "./test-entrypoint.sh"]
   initializer:
     build:
       context: .

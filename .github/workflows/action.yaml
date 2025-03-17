@@ -11,14 +11,17 @@ jobs:
     # Runs pytest and black formatting tool
     runs-on: nicleary-ubuntu-k8s
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Docker build
-        run: docker build -t shop_gen_test:${{ github.run_number }} -f Dockerfile.test .
-
-      - name: Run tests
-        run: docker run --name pytest shop_gen_test:${{ github.run_number }}
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13.1'
+          cache: 'pip' # caching pip dependencies
+      # Install dependencies
+      - run: pip3 install -r requirements.txt
+      - run: pip3 install -r requirements-dev.txt
+      # Actually run tests
+      - run: pytest -c shop_gen/pytest.ini
+      - run: black . --check
 
   build:
     runs-on: nicleary-ubuntu-k8s
@@ -43,6 +46,8 @@ jobs:
           push: true
           tags: harbor.nicleary.com/library/shop_gen:${{ github.run_number }}
           file: Dockerfile
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
   trivy:
     needs: build
@@ -122,6 +127,7 @@ jobs:
       - codeql
     name: Deploy
     runs-on: nicleary-ubuntu-k8s
+    if: "github.ref == 'refs/heads/master'"
     container: harbor.nicleary.com/dockerhub/dtzar/helm-kubectl:3.12.0
     environment: 
       name: Production

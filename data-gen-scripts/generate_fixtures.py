@@ -17,13 +17,20 @@ datafile_urls = {
     "discerning-merchant-guide.json": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/book/Dave%20Eisinger;%20Discerning%20Merchant's%20Price%20Guide.json",
 }
 
+
 def pull_datafile_from_5etools(filename_to_save: Path, json_url: str):
     print(f"Getting {json_url}")
-    result = requests.get(json_url, headers={"Accept": "application/json", "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0"})
+    result = requests.get(
+        json_url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:136.0) Gecko/20100101 Firefox/136.0",
+        },
+    )
     if not result.ok:
         print(f"Error getting json from {json_url}. Status {result.status_code}")
         exit(1)
-    with open(filename_to_save, 'w') as file:
+    with open(filename_to_save, "w") as file:
         json.dump(result.json(), file, indent=4)
 
 
@@ -115,13 +122,12 @@ def get_col_indices_for_name_and_price(column_labels):
 def get_item_price_by_name(name: str) -> int:
     return item_costs.get(name, 0)
 
+
 if not DATAFILE_PATH.exists() or not DATAFILE_PATH.is_dir():
     os.mkdir(DATAFILE_PATH)
 
 for filename, url in datafile_urls.items():
     pull_datafile_from_5etools(DATAFILE_PATH.joinpath(filename), url)
-
-
 
 
 item_costs = {}
