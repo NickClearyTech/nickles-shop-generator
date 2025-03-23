@@ -31,6 +31,8 @@ services:
       - postgres
   postgres:
     image: postgres:15-alpine
+    security_opt:
+      - no-new-privileges:true
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:

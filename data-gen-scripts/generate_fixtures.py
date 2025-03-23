@@ -228,12 +228,12 @@ print("Processed books")
 all_items = []
 current_pk = 1
 
-with open(DATAFILE_PATH.joinpath("items.json")) as fh:
+with open(DATAFILE_PATH.joinpath("items-base.json")) as fh:
     data = json.load(fh)
 
 types = set()
 
-for item in data["item"]:
+for item in data["baseitem"]:
 
     item_price = item["value"] if "value" in item.keys() else 0
     if item_price == 0:
