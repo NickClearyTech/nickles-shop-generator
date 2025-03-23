@@ -16,7 +16,7 @@ psycopg2-binary==2.9.10
 django-picklefield==3.1
 
 # Webserver
-gunicorn==22.0.0
+gunicorn==23.0.0
 
 # Celery
 celery==5.3.4

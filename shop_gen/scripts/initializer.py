@@ -18,8 +18,8 @@ def run():
     print("Importing spells")
     call_command("loaddata", "fixtures/spells.json")
 
-    print("Importing items")
-    call_command("loaddata", "fixtures/items.json")
+    # print("Importing items")
+    # call_command("loaddata", "fixtures/items.json")
 
     print("Running initializer")
     if User.objects.filter(email=DEFAULT_ADMIN_EMAIL, is_superuser=True).count() == 1:

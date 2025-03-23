@@ -32,7 +32,7 @@ def generate_shop_task(self, job_id: int):
         job_object.status = Job.Status.FAILURE
         job_object.job_result = {"error": str(e)}
         job_object.save()
-        return
+        return 0
 
     shop = generate_shop(serialized_data)
 
